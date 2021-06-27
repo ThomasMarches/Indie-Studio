@@ -130,7 +130,7 @@ For the game we have :
 
 ## Repository
 
-* https://github.com/EpitechIT2020/B-YEP-400-TLS-4-1-indiestudio-thomas.marches
+* https://github.com/ThomasMarches/Indie-Studio
 <br>
 <br>
 
