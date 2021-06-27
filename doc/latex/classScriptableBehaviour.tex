@@ -1,0 +1,253 @@
+\hypertarget{classScriptableBehaviour}{}\doxysection{Scriptable\+Behaviour Class Reference}
+\label{classScriptableBehaviour}\index{ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a6019fc42c27e40c62b6f5f6be7fe8c83}\label{classScriptableBehaviour_a6019fc42c27e40c62b6f5f6be7fe8c83}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_a6019fc42c27e40c62b6f5f6be7fe8c83}{on\+\_\+create}} ()
+\begin{DoxyCompactList}\small\item\em Called when the script is added in the entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a3523654ee154d37205d5961881dbeaaf}\label{classScriptableBehaviour_a3523654ee154d37205d5961881dbeaaf}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_a3523654ee154d37205d5961881dbeaaf}{on\+\_\+update}} ()
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_ad53da4a61f4a533c3b36e99df6e6c933}\label{classScriptableBehaviour_ad53da4a61f4a533c3b36e99df6e6c933}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_ad53da4a61f4a533c3b36e99df6e6c933}{on\+\_\+destroy}} ()
+\begin{DoxyCompactList}\small\item\em Called when the script is removed to the entity or when the entity is destroyed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a97ab0202a1a425c66b46138c4f13d1a0}\label{classScriptableBehaviour_a97ab0202a1a425c66b46138c4f13d1a0}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_a97ab0202a1a425c66b46138c4f13d1a0}{on\+\_\+collision\+\_\+enter}} (\mbox{\hyperlink{classfox_1_1Collider}{fox\+::\+Collider}} \&)
+\begin{DoxyCompactList}\small\item\em Called when a collision enter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a15ac6a09fc5e1398e933ea55ba7ab5e3}\label{classScriptableBehaviour_a15ac6a09fc5e1398e933ea55ba7ab5e3}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_a15ac6a09fc5e1398e933ea55ba7ab5e3}{on\+\_\+collision\+\_\+stay}} (\mbox{\hyperlink{classfox_1_1Collider}{fox\+::\+Collider}} \&)
+\begin{DoxyCompactList}\small\item\em Called when a collision stay. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a2f53a77bbb009692f43d610b1f556c96}\label{classScriptableBehaviour_a2f53a77bbb009692f43d610b1f556c96}} 
+virtual void \mbox{\hyperlink{classScriptableBehaviour_a2f53a77bbb009692f43d610b1f556c96}{on\+\_\+collision\+\_\+exit}} (\mbox{\hyperlink{classfox_1_1Collider}{fox\+::\+Collider}} \&)
+\begin{DoxyCompactList}\small\item\em Called when a collision exit. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\T \& \mbox{\hyperlink{classScriptableBehaviour_adf412b0f0c25c1bc1e65ee608da343d9}{add\+\_\+component}} (Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em Add a component to the entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{classScriptableBehaviour_a036aa0836a4f59fc08c16b7b92c4fc42}{add\+\_\+component}} ()
+\begin{DoxyCompactList}\small\item\em Add component to the entity index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$ T \& $>$ \mbox{\hyperlink{classScriptableBehaviour_ae0508ad0645a8b921b24534b4e009837}{get\+\_\+component}} ()
+\begin{DoxyCompactList}\small\item\em Get the component object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptableBehaviour_ad1fabd7c1816c82f067ed428ae3c9e94}{set\+\_\+entity}} (Entity\+Id id)
+\begin{DoxyCompactList}\small\item\em Set the id of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptableBehaviour_a699ccd027119c43a49fa14aee6669471}{set\+\_\+world}} (\mbox{\hyperlink{classfox_1_1World}{fox\+::\+World}} \&world)
+\begin{DoxyCompactList}\small\item\em Set the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptableBehaviour_abb80f57e76153730126e5eca30ba4c96}{set\+\_\+app}} (\mbox{\hyperlink{classfox_1_1Application}{fox\+::\+Application}} \&app)
+\begin{DoxyCompactList}\small\item\em Set the application reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScriptableBehaviour_a0d3520be60eaf16ab3cfa8df95605ce6}{set\+\_\+scene}} (\mbox{\hyperlink{classfox_1_1Scene}{fox\+::\+Scene}} \&scene)
+\begin{DoxyCompactList}\small\item\em Set the scene reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Application}{fox\+::\+Application}} \& \mbox{\hyperlink{classScriptableBehaviour_a5ae47bed3b855170a9e50434e793fcbb}{get\+\_\+app}} ()
+\begin{DoxyCompactList}\small\item\em Get the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Scene}{fox\+::\+Scene}} \& \mbox{\hyperlink{classScriptableBehaviour_a8529d0983e578bedbd16decfe1e30921}{get\+\_\+scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1World}{fox\+::\+World}} \& \mbox{\hyperlink{classScriptableBehaviour_a4ce5dc29904659262c0d44db01ace40c}{get\+\_\+world}} ()
+\begin{DoxyCompactList}\small\item\em Get the world. \end{DoxyCompactList}\item 
+Entity\+Id \mbox{\hyperlink{classScriptableBehaviour_aa408d4f845a0699ec9d7945bd30702e7}{get\+\_\+id}} ()
+\begin{DoxyCompactList}\small\item\em Get the id of the entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_af2934b88e9a8d3ab92202e89b0157f7b}\label{classScriptableBehaviour_af2934b88e9a8d3ab92202e89b0157f7b}} 
+void \mbox{\hyperlink{classScriptableBehaviour_af2934b88e9a8d3ab92202e89b0157f7b}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Entity}{fox\+::\+Entity}} \mbox{\hyperlink{classScriptableBehaviour_a2e368b0dec1729afe18ba0abe862cbdf}{new\+\_\+entity}} ()
+\begin{DoxyCompactList}\small\item\em Create a new entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a3adf9147cf7de40fd3b425ff928ead14}\label{classScriptableBehaviour_a3adf9147cf7de40fd3b425ff928ead14}} 
+\mbox{\hyperlink{classfox_1_1Entity}{fox\+::\+Entity}} {\bfseries new\+\_\+entity} (const std\+::string \&name, bool enable=true)
+\item 
+\mbox{\Hypertarget{classScriptableBehaviour_a22d64f99ff7d42c1c2f98ec157ff47f1}\label{classScriptableBehaviour_a22d64f99ff7d42c1c2f98ec157ff47f1}} 
+\mbox{\hyperlink{classfox_1_1Entity}{fox\+::\+Entity}} {\bfseries new\+\_\+entity} (const std\+::string \&name, const std\+::string \&tag, bool enable=true)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScriptableBehaviour_a036aa0836a4f59fc08c16b7b92c4fc42}\label{classScriptableBehaviour_a036aa0836a4f59fc08c16b7b92c4fc42}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& Scriptable\+Behaviour\+::add\+\_\+component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add component to the entity index. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the Component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+T\& reference to the Component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_adf412b0f0c25c1bc1e65ee608da343d9}\label{classScriptableBehaviour_adf412b0f0c25c1bc1e65ee608da343d9}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+T\& Scriptable\+Behaviour\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a component to the entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+{\em Args} & the list of arguments to pass to the constuctor of the component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the arguments to pass to the constuctor of the component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& a reference the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_a5ae47bed3b855170a9e50434e793fcbb}\label{classScriptableBehaviour_a5ae47bed3b855170a9e50434e793fcbb}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!get\_app@{get\_app}}
+\index{get\_app@{get\_app}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{get\_app()}{get\_app()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Application}{fox\+::\+Application}}\& Scriptable\+Behaviour\+::get\+\_\+app (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the application. 
+
+\begin{DoxyReturn}{Returns}
+the application 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_ae0508ad0645a8b921b24534b4e009837}\label{classScriptableBehaviour_ae0508ad0645a8b921b24534b4e009837}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{get\_component()}{get\_component()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$T\&$>$ Scriptable\+Behaviour\+::get\+\_\+component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the component object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+fox\+::\+Option$<$\+T\&$>$ an optionnal value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_aa408d4f845a0699ec9d7945bd30702e7}\label{classScriptableBehaviour_aa408d4f845a0699ec9d7945bd30702e7}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily Entity\+Id Scriptable\+Behaviour\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the id of the entity. 
+
+\begin{DoxyReturn}{Returns}
+the id of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_a8529d0983e578bedbd16decfe1e30921}\label{classScriptableBehaviour_a8529d0983e578bedbd16decfe1e30921}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!get\_scene@{get\_scene}}
+\index{get\_scene@{get\_scene}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{get\_scene()}{get\_scene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Scene}{fox\+::\+Scene}}\& Scriptable\+Behaviour\+::get\+\_\+scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene. 
+
+\begin{DoxyReturn}{Returns}
+the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_a4ce5dc29904659262c0d44db01ace40c}\label{classScriptableBehaviour_a4ce5dc29904659262c0d44db01ace40c}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!get\_world@{get\_world}}
+\index{get\_world@{get\_world}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{get\_world()}{get\_world()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1World}{fox\+::\+World}}\& Scriptable\+Behaviour\+::get\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the world. 
+
+\begin{DoxyReturn}{Returns}
+the world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_a2e368b0dec1729afe18ba0abe862cbdf}\label{classScriptableBehaviour_a2e368b0dec1729afe18ba0abe862cbdf}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!new\_entity@{new\_entity}}
+\index{new\_entity@{new\_entity}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{new\_entity()}{new\_entity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Entity}{fox\+::\+Entity}} Scriptable\+Behaviour\+::new\+\_\+entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a new entity. 
+
+\begin{DoxyReturn}{Returns}
+the new created entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScriptableBehaviour_abb80f57e76153730126e5eca30ba4c96}\label{classScriptableBehaviour_abb80f57e76153730126e5eca30ba4c96}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!set\_app@{set\_app}}
+\index{set\_app@{set\_app}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{set\_app()}{set\_app()}}
+{\footnotesize\ttfamily void Scriptable\+Behaviour\+::set\+\_\+app (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{fox\+::\+Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the application reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & the application reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptableBehaviour_ad1fabd7c1816c82f067ed428ae3c9e94}\label{classScriptableBehaviour_ad1fabd7c1816c82f067ed428ae3c9e94}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!set\_entity@{set\_entity}}
+\index{set\_entity@{set\_entity}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{set\_entity()}{set\_entity()}}
+{\footnotesize\ttfamily void Scriptable\+Behaviour\+::set\+\_\+entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the id of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptableBehaviour_a0d3520be60eaf16ab3cfa8df95605ce6}\label{classScriptableBehaviour_a0d3520be60eaf16ab3cfa8df95605ce6}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!set\_scene@{set\_scene}}
+\index{set\_scene@{set\_scene}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{set\_scene()}{set\_scene()}}
+{\footnotesize\ttfamily void Scriptable\+Behaviour\+::set\+\_\+scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Scene}{fox\+::\+Scene}} \&}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the scene reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & the scene reference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScriptableBehaviour_a699ccd027119c43a49fa14aee6669471}\label{classScriptableBehaviour_a699ccd027119c43a49fa14aee6669471}} 
+\index{ScriptableBehaviour@{ScriptableBehaviour}!set\_world@{set\_world}}
+\index{set\_world@{set\_world}!ScriptableBehaviour@{ScriptableBehaviour}}
+\doxysubsubsection{\texorpdfstring{set\_world()}{set\_world()}}
+{\footnotesize\ttfamily void Scriptable\+Behaviour\+::set\+\_\+world (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1World}{fox\+::\+World}} \&}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & the E\+CS World \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/Scriptable\+Behaviour.\+hpp\end{DoxyCompactItemize}

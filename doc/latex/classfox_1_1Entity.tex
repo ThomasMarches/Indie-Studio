@@ -1,0 +1,226 @@
+\hypertarget{classfox_1_1Entity}{}\doxysection{fox\+::Entity Class Reference}
+\label{classfox_1_1Entity}\index{fox::Entity@{fox::Entity}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Entity_a80412aa6d54dde12e9f180bff58c02a5}\label{classfox_1_1Entity_a80412aa6d54dde12e9f180bff58c02a5}} 
+\mbox{\hyperlink{classfox_1_1Entity_a80412aa6d54dde12e9f180bff58c02a5}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classfox_1_1Entity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Entity_a5b4cd347ff58167b050116e749285ea4}{Entity}} (\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$w, Entity\+Id id)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classfox_1_1Entity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Entity_ac098ed366f37b99428bccd59a36ae7ed}\label{classfox_1_1Entity_ac098ed366f37b99428bccd59a36ae7ed}} 
+\mbox{\hyperlink{classfox_1_1Entity_ac098ed366f37b99428bccd59a36ae7ed}{Entity}} (const \mbox{\hyperlink{classfox_1_1Entity}{Entity}} \&)=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classfox_1_1Entity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Entity_ab7c5510d2ef13c26a0935ecdb040a74e}\label{classfox_1_1Entity_ab7c5510d2ef13c26a0935ecdb040a74e}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classfox_1_1Entity}{Entity}} \&e) const
+\item 
+\mbox{\Hypertarget{classfox_1_1Entity_a72f0bfdfa0cfbb6d4c022fa15538042f}\label{classfox_1_1Entity_a72f0bfdfa0cfbb6d4c022fa15538042f}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classfox_1_1Entity}{Entity}} \&other) const
+\item 
+\mbox{\Hypertarget{classfox_1_1Entity_ac38312b103feee8d51d707319941024d}\label{classfox_1_1Entity_ac38312b103feee8d51d707319941024d}} 
+\mbox{\hyperlink{classfox_1_1Entity}{Entity}} \& {\bfseries operator=} (const \mbox{\hyperlink{classfox_1_1Entity}{Entity}} \&other)
+\item 
+\mbox{\Hypertarget{classfox_1_1Entity_a2210a1eef924a5fbb85a53252abc6007}\label{classfox_1_1Entity_a2210a1eef924a5fbb85a53252abc6007}} 
+void \mbox{\hyperlink{classfox_1_1Entity_a2210a1eef924a5fbb85a53252abc6007}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Remove the entity to the world. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfox_1_1Entity_ae5962599e1e412582d6d4b9d4e4e6911}{is\+\_\+enable}} ()
+\begin{DoxyCompactList}\small\item\em Check if an entity is enbale or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Entity_a3838dbec605d3f57e34a061960aede52}{set\+\_\+enable}} (bool v)
+\begin{DoxyCompactList}\small\item\em Enable the entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\\mbox{\hyperlink{classfox_1_1Entity}{Entity}} \& \mbox{\hyperlink{classfox_1_1Entity_ab61471b0358af973b59bc740151416cc}{add}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Add a component to the entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classfox_1_1Entity}{Entity}} \& \mbox{\hyperlink{classfox_1_1Entity_a4b4db1394ac1b9c90d856b35095474bc}{add}} ()
+\begin{DoxyCompactList}\small\item\em Add component to the entity index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$ T \& $>$ \mbox{\hyperlink{classfox_1_1Entity_a321fc6a143edf2c1e14cf4d00717e57f}{get}} ()
+\begin{DoxyCompactList}\small\item\em Get the component object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classfox_1_1Entity}{Entity}} \& \mbox{\hyperlink{classfox_1_1Entity_a2567f575d960e32fbec0ce1ef3be4c67}{set}} (T \&\&value)
+\begin{DoxyCompactList}\small\item\em Set the value of a component. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classfox_1_1Entity_a003eddebcf29a8fcc9a1f99d05fbb9a4}{remove}} ()
+\begin{DoxyCompactList}\small\item\em remove a component to an entity \end{DoxyCompactList}\item 
+Entity\+Id \mbox{\hyperlink{classfox_1_1Entity_a8106404fee0262ac15fccc7edf4270bc}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Get the id of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$ \mbox{\hyperlink{classfox_1_1Entity_a9986fae64a2c163e8025b879df041956}{get\+\_\+world}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classfox_1_1World}{World}} where the entity is spawned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfox_1_1Entity_a5b4cd347ff58167b050116e749285ea4}\label{classfox_1_1Entity_a5b4cd347ff58167b050116e749285ea4}} 
+\index{fox::Entity@{fox::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily fox\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$}]{w,  }\item[{Entity\+Id}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classfox_1_1Entity}{Entity}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the world \\
+\hline
+{\em id} & the id of the entity \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Entity_a4b4db1394ac1b9c90d856b35095474bc}\label{classfox_1_1Entity_a4b4db1394ac1b9c90d856b35095474bc}} 
+\index{fox::Entity@{fox::Entity}!add@{add}}
+\index{add@{add}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Entity}{Entity}}\& fox\+::\+Entity\+::add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add component to the entity index. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the Component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Enity\& the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_ab61471b0358af973b59bc740151416cc}\label{classfox_1_1Entity_ab61471b0358af973b59bc740151416cc}} 
+\index{fox::Entity@{fox::Entity}!add@{add}}
+\index{add@{add}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+\mbox{\hyperlink{classfox_1_1Entity}{Entity}}\& fox\+::\+Entity\+::add (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a component to the entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+{\em Args} & the list of arguments to pass to the constuctor of the component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the arguments to pass to the constuctor of the component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Enity\& the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_a321fc6a143edf2c1e14cf4d00717e57f}\label{classfox_1_1Entity_a321fc6a143edf2c1e14cf4d00717e57f}} 
+\index{fox::Entity@{fox::Entity}!get@{get}}
+\index{get@{get}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$T \&$>$ fox\+::\+Entity\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the component object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+fox\+::\+Option$<$\+T\&$>$ an optionnal value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_a8106404fee0262ac15fccc7edf4270bc}\label{classfox_1_1Entity_a8106404fee0262ac15fccc7edf4270bc}} 
+\index{fox::Entity@{fox::Entity}!get\_id@{get\_id}}
+\index{get\_id@{get\_id}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_id()}{get\_id()}}
+{\footnotesize\ttfamily Entity\+Id fox\+::\+Entity\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the id of the entity. 
+
+\begin{DoxyReturn}{Returns}
+the id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_a9986fae64a2c163e8025b879df041956}\label{classfox_1_1Entity_a9986fae64a2c163e8025b879df041956}} 
+\index{fox::Entity@{fox::Entity}!get\_world@{get\_world}}
+\index{get\_world@{get\_world}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_world()}{get\_world()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1World}{World}}$\ast$ fox\+::\+Entity\+::get\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get \mbox{\hyperlink{classfox_1_1World}{World}} where the entity is spawned. 
+
+\begin{DoxyReturn}{Returns}
+the Ecs \mbox{\hyperlink{classfox_1_1World}{World}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_ae5962599e1e412582d6d4b9d4e4e6911}\label{classfox_1_1Entity_ae5962599e1e412582d6d4b9d4e4e6911}} 
+\index{fox::Entity@{fox::Entity}!is\_enable@{is\_enable}}
+\index{is\_enable@{is\_enable}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{is\_enable()}{is\_enable()}}
+{\footnotesize\ttfamily bool fox\+::\+Entity\+::is\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if an entity is enbale or not. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is enable otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Entity_a003eddebcf29a8fcc9a1f99d05fbb9a4}\label{classfox_1_1Entity_a003eddebcf29a8fcc9a1f99d05fbb9a4}} 
+\index{fox::Entity@{fox::Entity}!remove@{remove}}
+\index{remove@{remove}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void fox\+::\+Entity\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+remove a component to an entity 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component to be remove \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classfox_1_1Entity_a2567f575d960e32fbec0ce1ef3be4c67}\label{classfox_1_1Entity_a2567f575d960e32fbec0ce1ef3be4c67}} 
+\index{fox::Entity@{fox::Entity}!set@{set}}
+\index{set@{set}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Entity}{Entity}}\& fox\+::\+Entity\+::set (\begin{DoxyParamCaption}\item[{T \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the value of a component. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the new component value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Entity_a3838dbec605d3f57e34a061960aede52}\label{classfox_1_1Entity_a3838dbec605d3f57e34a061960aede52}} 
+\index{fox::Entity@{fox::Entity}!set\_enable@{set\_enable}}
+\index{set\_enable@{set\_enable}!fox::Entity@{fox::Entity}}
+\doxysubsubsection{\texorpdfstring{set\_enable()}{set\_enable()}}
+{\footnotesize\ttfamily void fox\+::\+Entity\+::set\+\_\+enable (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the enable value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/World.\+hpp\end{DoxyCompactItemize}

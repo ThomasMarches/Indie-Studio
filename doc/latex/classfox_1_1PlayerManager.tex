@@ -1,0 +1,79 @@
+\hypertarget{classfox_1_1PlayerManager}{}\doxysection{fox\+::Player\+Manager Class Reference}
+\label{classfox_1_1PlayerManager}\index{fox::PlayerManager@{fox::PlayerManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a0b4d657e62299028ede016e1153cde87}\label{classfox_1_1PlayerManager_a0b4d657e62299028ede016e1153cde87}} 
+{\bfseries Player\+Manager} (std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classPlayerInput}{Player\+Input}} $>$ \&\&list)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_ac001891c006c9c4b11bdc14b2a5cd34a}\label{classfox_1_1PlayerManager_ac001891c006c9c4b11bdc14b2a5cd34a}} 
+const std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classPlayerInput}{Player\+Input}} $>$ \& {\bfseries get\+Inputs} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a30a68ceacb6c8408e118a65d7ac46ca0}\label{classfox_1_1PlayerManager_a30a68ceacb6c8408e118a65d7ac46ca0}} 
+const std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \& {\bfseries get\+Scores} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a95f85df3519f92796500c5bffc924058}\label{classfox_1_1PlayerManager_a95f85df3519f92796500c5bffc924058}} 
+const \mbox{\hyperlink{classPlayerInput}{Player\+Input}} \& {\bfseries get\+Current\+Input} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a24590b2a7b21baf72bf9ea28cbc792d2}\label{classfox_1_1PlayerManager_a24590b2a7b21baf72bf9ea28cbc792d2}} 
+void {\bfseries set\+Current} (int id)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a3024fc96fb6ac0511aeaae84500e30e5}\label{classfox_1_1PlayerManager_a3024fc96fb6ac0511aeaae84500e30e5}} 
+const \mbox{\hyperlink{classPlayerInput}{Player\+Input}} \& {\bfseries get\+Input} (const std\+::string \&str)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a23d599c5289e686cd9effd2bf1e6f184}\label{classfox_1_1PlayerManager_a23d599c5289e686cd9effd2bf1e6f184}} 
+int {\bfseries get\+Score} (const std\+::string \&str)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a31e009ba558ccca9b113742ae0cd7654}\label{classfox_1_1PlayerManager_a31e009ba558ccca9b113742ae0cd7654}} 
+int {\bfseries get\+Current\+Id} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a52d2ef832f02dce8e712a522fb5abb7f}\label{classfox_1_1PlayerManager_a52d2ef832f02dce8e712a522fb5abb7f}} 
+void {\bfseries set\+Changing\+Key} (bool state)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a72618cd1a6ece6bd6a8c4c78892a6723}\label{classfox_1_1PlayerManager_a72618cd1a6ece6bd6a8c4c78892a6723}} 
+bool {\bfseries is\+Key\+Changing} () const
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a9b46525a48020cdfa2752244903495ce}\label{classfox_1_1PlayerManager_a9b46525a48020cdfa2752244903495ce}} 
+void {\bfseries set\+Selected\+Key} (Selected\+Key state)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_acaeab36cb592d93b0b5ba103b009b1e6}\label{classfox_1_1PlayerManager_acaeab36cb592d93b0b5ba103b009b1e6}} 
+Selected\+Key {\bfseries get\+Selected\+Key} () const
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_af06ca0807a6ef676a80039e8f2b05384}\label{classfox_1_1PlayerManager_af06ca0807a6ef676a80039e8f2b05384}} 
+void {\bfseries update\+Score} (std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \&v\+\_\+\+Score)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a516d91dc9d3fcd616d0ada30e9d39c83}\label{classfox_1_1PlayerManager_a516d91dc9d3fcd616d0ada30e9d39c83}} 
+void {\bfseries update\+Skin} (std\+::string index, int color)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_ae612f3068f66c94a1578f230083709d4}\label{classfox_1_1PlayerManager_ae612f3068f66c94a1578f230083709d4}} 
+void {\bfseries increment\+Score} (const std\+::string \&player\+Name, int nbr)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a020cff7f9a9510bbab462d46faadb445}\label{classfox_1_1PlayerManager_a020cff7f9a9510bbab462d46faadb445}} 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+Player\+Names} () const
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a4561998a834eec5d0bfa555e6b4e54d3}\label{classfox_1_1PlayerManager_a4561998a834eec5d0bfa555e6b4e54d3}} 
+const std\+::string \& {\bfseries get\+Player\+Name\+At\+Index} (int index) const
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_ac81c6dc5d983f21dc4f2d2e8b40647d3}\label{classfox_1_1PlayerManager_ac81c6dc5d983f21dc4f2d2e8b40647d3}} 
+const std\+::string \& {\bfseries get\+Player\+Color\+At\+Index} (int index) const
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_adadeb3b282d476968e4068468fdc3dbc}\label{classfox_1_1PlayerManager_adadeb3b282d476968e4068468fdc3dbc}} 
+void {\bfseries set\+Player\+Names} (std\+::vector$<$ std\+::string $>$ \&player\+Names)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_add8bd63f013466f84eff697b0a9f87e5}\label{classfox_1_1PlayerManager_add8bd63f013466f84eff697b0a9f87e5}} 
+void {\bfseries Change\+Specific\+Key} (Keyboard\+Key new\+\_\+key, Selected\+Key key\+\_\+to\+\_\+change)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a2e8c19b1f2285e3d8a2b056338dfcd45}\label{classfox_1_1PlayerManager_a2e8c19b1f2285e3d8a2b056338dfcd45}} 
+void {\bfseries Change\+Specific\+Button} (int new\+\_\+button, Selected\+Key key\+\_\+to\+\_\+change)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_a9b2af0472b3611b4596720e5875cc646}\label{classfox_1_1PlayerManager_a9b2af0472b3611b4596720e5875cc646}} 
+bool {\bfseries is\+Key\+Free} (Keyboard\+Key key)
+\item 
+\mbox{\Hypertarget{classfox_1_1PlayerManager_ac46e975b42ab85f43af955499d053fbc}\label{classfox_1_1PlayerManager_ac46e975b42ab85f43af955499d053fbc}} 
+bool {\bfseries is\+Button\+Free} (int button, int x)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Player\+Manager.\+hpp\end{DoxyCompactItemize}

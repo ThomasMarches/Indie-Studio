@@ -1,0 +1,142 @@
+\hypertarget{classfox_1_1SceneManager}{}\doxysection{fox\+::Scene\+Manager Class Reference}
+\label{classfox_1_1SceneManager}\index{fox::SceneManager@{fox::SceneManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a1a9e30ce2166d69a7bda357d020def7b}\label{classfox_1_1SceneManager_a1a9e30ce2166d69a7bda357d020def7b}} 
+{\bfseries Scene\+Manager} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a8136cba2f288870dd312e3b5ca8be38b}\label{classfox_1_1SceneManager_a8136cba2f288870dd312e3b5ca8be38b}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a90ab0061604f46f2c37f5955fa9cc730}\label{classfox_1_1SceneManager_a90ab0061604f46f2c37f5955fa9cc730}} 
+void {\bfseries fix\+\_\+update} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a151183b0beee682e39da71b8306ed6bc}\label{classfox_1_1SceneManager_a151183b0beee682e39da71b8306ed6bc}} 
+void {\bfseries draw} ()
+\item 
+{\footnotesize template$<$typename T , typename... Args, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of$<$ Scene, T $>$\+::value, bool $>$  = true$>$ }\\T \& \mbox{\hyperlink{classfox_1_1SceneManager_a46daf088f66d42b66fe02af6a1acd8ce}{add}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Add a new scene. \end{DoxyCompactList}\item 
+Scene\+Id \mbox{\hyperlink{classfox_1_1SceneManager_a6382ed88b9e15b44c8d529ca31fdb5b5}{find}} (const std\+::string \&str\+Name)
+\begin{DoxyCompactList}\small\item\em Find the scene matching with name given in parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1SceneManager_a0b27d81edc942fb3c4a986ee52bac7f2}{switch\+\_\+to}} (Scene\+Id id)
+\begin{DoxyCompactList}\small\item\em Transitions to scene with specified id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1SceneManager_abbe68c6633df2472165104e30ae3bb77}{switch\+\_\+to}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Transitions to scene with specified name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1SceneManager_a03b25b75019e1c4c03919777dc254a65}{remove}} (const std\+::string \&str\+Name)
+\begin{DoxyCompactList}\small\item\em Remove a scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a70832b7d1c574d0554be32554de31cb2}\label{classfox_1_1SceneManager_a70832b7d1c574d0554be32554de31cb2}} 
+void \mbox{\hyperlink{classfox_1_1SceneManager_a70832b7d1c574d0554be32554de31cb2}{perform}} (Command, \mbox{\hyperlink{classfox_1_1Application}{Application}} \&)
+\begin{DoxyCompactList}\small\item\em Do all the task in the queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1SceneManager_a428a29f019a14ed3c2e085527ad3a206}\label{classfox_1_1SceneManager_a428a29f019a14ed3c2e085527ad3a206}} 
+void \mbox{\hyperlink{classfox_1_1SceneManager_a428a29f019a14ed3c2e085527ad3a206}{queue}} (Command)
+\begin{DoxyCompactList}\small\item\em Add a new command to the queue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Scene}{Scene}} $\ast$ \mbox{\hyperlink{classfox_1_1SceneManager_afc5d947555c3b27a095c8b4e565e6c7a}{get\+\_\+active}} ()
+\begin{DoxyCompactList}\small\item\em Get the current scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1SceneManager_a46daf088f66d42b66fe02af6a1acd8ce}\label{classfox_1_1SceneManager_a46daf088f66d42b66fe02af6a1acd8ce}} 
+\index{fox::SceneManager@{fox::SceneManager}!add@{add}}
+\index{add@{add}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of$<$ Scene, T $>$\+::value, bool $>$  = true$>$ \\
+T\& fox\+::\+Scene\+Manager\+::add (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new scene. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the class of the scene \\
+\hline
+{\em Args} & the constructor arguments types \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the constructor arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1SceneManager_a6382ed88b9e15b44c8d529ca31fdb5b5}\label{classfox_1_1SceneManager_a6382ed88b9e15b44c8d529ca31fdb5b5}} 
+\index{fox::SceneManager@{fox::SceneManager}!find@{find}}
+\index{find@{find}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily Scene\+Id fox\+::\+Scene\+Manager\+::find (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name }\end{DoxyParamCaption})}
+
+
+
+Find the scene matching with name given in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Name} & the name of the scene to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the id the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1SceneManager_afc5d947555c3b27a095c8b4e565e6c7a}\label{classfox_1_1SceneManager_afc5d947555c3b27a095c8b4e565e6c7a}} 
+\index{fox::SceneManager@{fox::SceneManager}!get\_active@{get\_active}}
+\index{get\_active@{get\_active}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{get\_active()}{get\_active()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Scene}{Scene}}$\ast$ fox\+::\+Scene\+Manager\+::get\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current scene. 
+
+\begin{DoxyReturn}{Returns}
+the current scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1SceneManager_a03b25b75019e1c4c03919777dc254a65}\label{classfox_1_1SceneManager_a03b25b75019e1c4c03919777dc254a65}} 
+\index{fox::SceneManager@{fox::SceneManager}!remove@{remove}}
+\index{remove@{remove}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+Manager\+::remove (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Name }\end{DoxyParamCaption})}
+
+
+
+Remove a scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the scene to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1SceneManager_abbe68c6633df2472165104e30ae3bb77}\label{classfox_1_1SceneManager_abbe68c6633df2472165104e30ae3bb77}} 
+\index{fox::SceneManager@{fox::SceneManager}!switch\_to@{switch\_to}}
+\index{switch\_to@{switch\_to}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{switch\_to()}{switch\_to()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+Manager\+::switch\+\_\+to (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Transitions to scene with specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the scene to transit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1SceneManager_a0b27d81edc942fb3c4a986ee52bac7f2}\label{classfox_1_1SceneManager_a0b27d81edc942fb3c4a986ee52bac7f2}} 
+\index{fox::SceneManager@{fox::SceneManager}!switch\_to@{switch\_to}}
+\index{switch\_to@{switch\_to}!fox::SceneManager@{fox::SceneManager}}
+\doxysubsubsection{\texorpdfstring{switch\_to()}{switch\_to()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+Manager\+::switch\+\_\+to (\begin{DoxyParamCaption}\item[{Scene\+Id}]{id }\end{DoxyParamCaption})}
+
+
+
+Transitions to scene with specified id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the scene to transit \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Scene\+Manager.\+hpp\end{DoxyCompactItemize}

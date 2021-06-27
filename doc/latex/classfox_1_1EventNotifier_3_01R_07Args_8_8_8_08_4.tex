@@ -1,0 +1,100 @@
+\hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4}{}\doxysection{fox\+::Event\+Notifier$<$ R(Args...)$>$ Class Template Reference}
+\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4}\index{fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_afd1869b9fcc337f8fac6b7e1ea8b42d6}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_afd1869b9fcc337f8fac6b7e1ea8b42d6}} 
+\mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_afd1869b9fcc337f8fac6b7e1ea8b42d6}{Event\+Notifier}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Event Notifier object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_aeb9afec5dc04ba8bb3324b1073fcb28c}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_aeb9afec5dc04ba8bb3324b1073fcb28c}} 
+{\bfseries Event\+Notifier} (const \mbox{\hyperlink{classfox_1_1EventNotifier}{Event\+Notifier}} \&other)
+\item 
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a0308dfe88434e67c9ee0a85772372bda}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a0308dfe88434e67c9ee0a85772372bda}} 
+\mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a0308dfe88434e67c9ee0a85772372bda}{$\sim$\+Event\+Notifier}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Event Notifier object. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a7ee39c264de97c62afea74632443cc87}{subscribe}} (const Cb\+Func \&cb)
+\begin{DoxyCompactList}\small\item\em Add a new subsciber. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_aae25d2ca42edc1c143f67e50b9d7ee10}{unsubscribe}} (size\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Remove a subscribers to the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a5745275bf28b83fbb927e3bfce8f3877}{notifiy}} (Args... args)
+\begin{DoxyCompactList}\small\item\em Notify the subscribers. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_acab20c1672940c8925ac7aa56f35e46c}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of connected subscibers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a5745275bf28b83fbb927e3bfce8f3877}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a5745275bf28b83fbb927e3bfce8f3877}} 
+\index{fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}!notifiy@{notifiy}}
+\index{notifiy@{notifiy}!fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{notifiy()}{notifiy()}}
+{\footnotesize\ttfamily template$<$class R , class... Args$>$ \\
+void \mbox{\hyperlink{classfox_1_1EventNotifier}{fox\+::\+Event\+Notifier}}$<$ R(Args...)$>$\+::notifiy (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Notify the subscribers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the arguments to pass to the subscribers \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_acab20c1672940c8925ac7aa56f35e46c}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_acab20c1672940c8925ac7aa56f35e46c}} 
+\index{fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}!size@{size}}
+\index{size@{size}!fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class R , class... Args$>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classfox_1_1EventNotifier}{fox\+::\+Event\+Notifier}}$<$ R(Args...)$>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of connected subscibers. 
+
+\begin{DoxyReturn}{Returns}
+std\+::size\+\_\+t the number of connected subscibers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a7ee39c264de97c62afea74632443cc87}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_a7ee39c264de97c62afea74632443cc87}} 
+\index{fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily template$<$class R , class... Args$>$ \\
+size\+\_\+t \mbox{\hyperlink{classfox_1_1EventNotifier}{fox\+::\+Event\+Notifier}}$<$ R(Args...)$>$\+::subscribe (\begin{DoxyParamCaption}\item[{const Cb\+Func \&}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new subsciber. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cb} & the callback to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t the id of the subscriber 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_aae25d2ca42edc1c143f67e50b9d7ee10}\label{classfox_1_1EventNotifier_3_01R_07Args_8_8_8_08_4_aae25d2ca42edc1c143f67e50b9d7ee10}} 
+\index{fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}!unsubscribe@{unsubscribe}}
+\index{unsubscribe@{unsubscribe}!fox::EventNotifier$<$ R(Args...)$>$@{fox::EventNotifier$<$ R(Args...)$>$}}
+\doxysubsubsection{\texorpdfstring{unsubscribe()}{unsubscribe()}}
+{\footnotesize\ttfamily template$<$class R , class... Args$>$ \\
+bool \mbox{\hyperlink{classfox_1_1EventNotifier}{fox\+::\+Event\+Notifier}}$<$ R(Args...)$>$\+::unsubscribe (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a subscribers to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the subscriber \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the subscriber successly removed 
+
+false if it\textquotesingle{}s failed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Event.\+hpp\end{DoxyCompactItemize}

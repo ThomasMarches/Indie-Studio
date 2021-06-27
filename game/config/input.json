@@ -1,0 +1,30 @@
+{
+  player1: {
+    KEY_UP: "W",
+    KEY_DOWN: "S",
+    KEY_RIGHT: "D",
+    KEY_LEFT: "A",
+    KEY_BOMB: "Space"
+  },
+  player2: {
+    KEY_UP: "Backspace",
+    KEY_DOWN: "B",
+    KEY_RIGHT: "D",
+    KEY_LEFT: "C",
+    KEY_BOMB: "O"
+  },
+  player3: {
+    KEY_UP: "Backspace",
+    KEY_DOWN: "B",
+    KEY_RIGHT: "D",
+    KEY_LEFT: "L",
+    KEY_BOMB: "O"
+  },
+  player4: {
+  KEY_UP: "X",
+  KEY_DOWN: "N",
+  KEY_RIGHT: "A",
+  KEY_LEFT: "Z",
+  KEY_BOMB: "E"
+}
+}

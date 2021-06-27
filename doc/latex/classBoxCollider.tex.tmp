@@ -1,0 +1,43 @@
+\hypertarget{classBoxCollider}{}\doxysection{Box\+Collider Class Reference}
+\label{classBoxCollider}\index{BoxCollider@{BoxCollider}}
+
+
+Inheritance diagram for Box\+Collider\+:
+% FIG 0
+
+
+Collaboration diagram for Box\+Collider\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBoxCollider_af9dc580315cf33127caefc5380617246}\label{classBoxCollider_af9dc580315cf33127caefc5380617246}} 
+{\bfseries Box\+Collider} (\mbox{\hyperlink{classfox_1_1Scene}{fox\+::\+Scene}} \&scene, \mbox{\hyperlink{structVec3}{Vec3}} scale=\mbox{\hyperlink{structVec3}{Vec3}}(1, 1, 1))
+\item 
+\mbox{\Hypertarget{classBoxCollider_af78e65fce23888ea31cde8164aba3f06}\label{classBoxCollider_af78e65fce23888ea31cde8164aba3f06}} 
+\mbox{\hyperlink{structVec3}{Vec3}} \mbox{\hyperlink{classBoxCollider_af78e65fce23888ea31cde8164aba3f06}{get\+Half\+Extents}} () const
+\begin{DoxyCompactList}\small\item\em Return the half-\/extents of the box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoxCollider_aabe477727f9a5ad4cf6f4701ea3853b6}\label{classBoxCollider_aabe477727f9a5ad4cf6f4701ea3853b6}} 
+void \mbox{\hyperlink{classBoxCollider_aabe477727f9a5ad4cf6f4701ea3853b6}{set\+Half\+Extents}} (const \mbox{\hyperlink{structVec3}{Vec3}} \&half\+Extents)
+\begin{DoxyCompactList}\small\item\em Set the half-\/extents of the box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoxCollider_aa8b0747b0dd94a7f660876ed2742c1ef}\label{classBoxCollider_aa8b0747b0dd94a7f660876ed2742c1ef}} 
+float \mbox{\hyperlink{classBoxCollider_aa8b0747b0dd94a7f660876ed2742c1ef}{get\+Volume}} () const
+\begin{DoxyCompactList}\small\item\em Compute and return the volume of the collision shape. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoxCollider_a6178671f2475e71ffdbab5a060fac0e5}\label{classBoxCollider_a6178671f2475e71ffdbab5a060fac0e5}} 
+\mbox{\hyperlink{structVec3}{Vec3}} \mbox{\hyperlink{classBoxCollider_a6178671f2475e71ffdbab5a060fac0e5}{get\+Centroid}} () const
+\begin{DoxyCompactList}\small\item\em Return the centroid of the polyhedron. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoxCollider_a0b8c56af7ce6985841a8d585497d1d59}\label{classBoxCollider_a0b8c56af7ce6985841a8d585497d1d59}} 
+reactphysics3d\+::\+Box\+Shape $\ast$ {\bfseries get\+React\+Shape} () const
+\item 
+\mbox{\Hypertarget{classBoxCollider_abd4d0ca718bfe992ab7b839797d57bfb}\label{classBoxCollider_abd4d0ca718bfe992ab7b839797d57bfb}} 
+void {\bfseries set\+\_\+collider} (reactphysics3d\+::\+Collider $\ast$)
+\item 
+\mbox{\Hypertarget{classBoxCollider_a636fe5a8f7182a69893fb5c6994b214b}\label{classBoxCollider_a636fe5a8f7182a69893fb5c6994b214b}} 
+reactphysics3d\+::\+Collider $\ast$ {\bfseries get\+\_\+collider} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Box\+Collider.\+hpp\end{DoxyCompactItemize}

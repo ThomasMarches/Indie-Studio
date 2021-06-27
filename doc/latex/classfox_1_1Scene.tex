@@ -1,0 +1,280 @@
+\hypertarget{classfox_1_1Scene}{}\doxysection{fox\+::Scene Class Reference}
+\label{classfox_1_1Scene}\index{fox::Scene@{fox::Scene}}
+
+
+Collaboration diagram for fox\+::Scene\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_a31b17289b155dca99640ba0d6df9f4bb}\label{classfox_1_1Scene_a31b17289b155dca99640ba0d6df9f4bb}} 
+{\bfseries Scene} (const std\+::string \&)
+\item 
+virtual void \mbox{\hyperlink{classfox_1_1Scene_a0574cdd78aa4c57179f062f29fe09e56}{on\+\_\+create}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)=0
+\begin{DoxyCompactList}\small\item\em Called when scene initially created. Called once. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1Scene_a4cb697aab83c9c07e8ae4b800dec043d}{on\+\_\+destroy}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)=0
+\begin{DoxyCompactList}\small\item\em Called when scene destroyed. Called at most once (if a scene is not removed from the game, this will never be called). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1Scene_ace91725d607edfbd6be111ce0bfe325f}{on\+\_\+enable}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em Called whenever a scene is transitioned into. Can be called many times in a typical game cycle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Scene_a4ab05b35560acd3aea86ebe3822d8f02}{enable}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em This function called the on\+\_\+enable function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1Scene_af47a8d9e1dcaec858f05bc790feb12f6}{on\+\_\+disable}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em Called whenever a transition out of a scene occurs. Can be called many times in a typical game cycle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Scene_a3c9663776366fbea5e14772232a800ad}{disable}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em This function called the on\+\_\+disable function. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1Scene_abc42a9bfc879b999e5db5be59446475b}{on\+\_\+update}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)=0
+\begin{DoxyCompactList}\small\item\em Called every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Scene_a83411024d0cb7dda1bc128f9324233c9}{update}} (\mbox{\hyperlink{classfox_1_1Application}{Application}} \&app)
+\begin{DoxyCompactList}\small\item\em This function called the on\+\_\+update function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Scene_a17c97283d916e62ff76f7477a6e44e0b}{fix\+\_\+update}} ()
+\begin{DoxyCompactList}\small\item\em Called every fix frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Scene_acc31d59c4abfa038b8468d76d66de15a}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Called to draw. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Scene_a4550056769282387f9f9aa0e9adf0504}\label{classfox_1_1Scene_a4550056769282387f9f9aa0e9adf0504}} 
+void {\bfseries init\+\_\+systems} ()
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_a142627828ca1f2170f3d3fdd4019d771}\label{classfox_1_1Scene_a142627828ca1f2170f3d3fdd4019d771}} 
+void {\bfseries destroy\+\_\+systems} ()
+\item 
+std\+::string \mbox{\hyperlink{classfox_1_1Scene_a5ad98ab2396fbdcad8622754aa24c567}{name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1World}{World}} \& \mbox{\hyperlink{classfox_1_1Scene_a2faf56bcc542089a6ff99e191f2b3973}{get\+\_\+world}} ()
+\begin{DoxyCompactList}\small\item\em Get the E\+CS \mbox{\hyperlink{classfox_1_1World}{World}}. \end{DoxyCompactList}\item 
+reactphysics3d\+::\+Physics\+World \& \mbox{\hyperlink{classfox_1_1Scene_aca7509328ebef9736db137f94c8b92f1}{get\+\_\+world\+\_\+physic}} ()
+\begin{DoxyCompactList}\small\item\em Get the physics world. \end{DoxyCompactList}\item 
+reactphysics3d\+::\+Physics\+Common \& \mbox{\hyperlink{classfox_1_1Scene_a02ea939453083dfae369fc472fea2d78}{get\+\_\+world\+\_\+common}} ()
+\begin{DoxyCompactList}\small\item\em Get the common physics. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_aedbf3ad8c3c542eda34795d333b88e51}\label{classfox_1_1Scene_aedbf3ad8c3c542eda34795d333b88e51}} 
+\mbox{\hyperlink{classfox_1_1World}{World}} {\bfseries m\+\_\+o\+World}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_ae91ed721ccd8e804f8ef732af500e5b9}\label{classfox_1_1Scene_ae91ed721ccd8e804f8ef732af500e5b9}} 
+scope$<$ reactphysics3d\+::\+Physics\+Common $>$ {\bfseries m\+\_\+\+Physics\+Common}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_abd41d04e8b6c89ffc66941295ee8ecf5}\label{classfox_1_1Scene_abd41d04e8b6c89ffc66941295ee8ecf5}} 
+reactphysics3d\+::\+Physics\+World $\ast$ {\bfseries m\+\_\+\+World}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_acecc2932e5a2817083abebefac73bbb3}\label{classfox_1_1Scene_acecc2932e5a2817083abebefac73bbb3}} 
+\mbox{\hyperlink{classfox_1_1Application}{Application}} $\ast$ {\bfseries m\+\_\+p\+App}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_a8dbabce8c4960a667459ab1dcbb95b19}\label{classfox_1_1Scene_a8dbabce8c4960a667459ab1dcbb95b19}} 
+const float {\bfseries time\+Step} = 1.\+0f / 60.\+0f
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_afbe6878625bca06fd5363a1171d6782a}\label{classfox_1_1Scene_afbe6878625bca06fd5363a1171d6782a}} 
+\mbox{\hyperlink{classColliderListener}{Collider\+Listener}} {\bfseries m\+\_\+o\+Listener}
+\item 
+\mbox{\Hypertarget{classfox_1_1Scene_a8718c69aef79b55e4f28fabc8131e8f2}\label{classfox_1_1Scene_a8718c69aef79b55e4f28fabc8131e8f2}} 
+bool {\bfseries m\+\_\+b\+Is\+Paused} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Scene_a3c9663776366fbea5e14772232a800ad}\label{classfox_1_1Scene_a3c9663776366fbea5e14772232a800ad}} 
+\index{fox::Scene@{fox::Scene}!disable@{disable}}
+\index{disable@{disable}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+::disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})}
+
+
+
+This function called the on\+\_\+disable function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_acc31d59c4abfa038b8468d76d66de15a}\label{classfox_1_1Scene_acc31d59c4abfa038b8468d76d66de15a}} 
+\index{fox::Scene@{fox::Scene}!draw@{draw}}
+\index{draw@{draw}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called to draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_a4ab05b35560acd3aea86ebe3822d8f02}\label{classfox_1_1Scene_a4ab05b35560acd3aea86ebe3822d8f02}} 
+\index{fox::Scene@{fox::Scene}!enable@{enable}}
+\index{enable@{enable}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+::enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})}
+
+
+
+This function called the on\+\_\+enable function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_a17c97283d916e62ff76f7477a6e44e0b}\label{classfox_1_1Scene_a17c97283d916e62ff76f7477a6e44e0b}} 
+\index{fox::Scene@{fox::Scene}!fix\_update@{fix\_update}}
+\index{fix\_update@{fix\_update}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{fix\_update()}{fix\_update()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+::fix\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called every fix frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_a2faf56bcc542089a6ff99e191f2b3973}\label{classfox_1_1Scene_a2faf56bcc542089a6ff99e191f2b3973}} 
+\index{fox::Scene@{fox::Scene}!get\_world@{get\_world}}
+\index{get\_world@{get\_world}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{get\_world()}{get\_world()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1World}{World}}\& fox\+::\+Scene\+::get\+\_\+world (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the E\+CS \mbox{\hyperlink{classfox_1_1World}{World}}. 
+
+\begin{DoxyReturn}{Returns}
+E\+CS \mbox{\hyperlink{classfox_1_1World}{World}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Scene_a02ea939453083dfae369fc472fea2d78}\label{classfox_1_1Scene_a02ea939453083dfae369fc472fea2d78}} 
+\index{fox::Scene@{fox::Scene}!get\_world\_common@{get\_world\_common}}
+\index{get\_world\_common@{get\_world\_common}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{get\_world\_common()}{get\_world\_common()}}
+{\footnotesize\ttfamily reactphysics3d\+::\+Physics\+Common\& fox\+::\+Scene\+::get\+\_\+world\+\_\+common (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the common physics. 
+
+\begin{DoxyReturn}{Returns}
+common physics 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Scene_aca7509328ebef9736db137f94c8b92f1}\label{classfox_1_1Scene_aca7509328ebef9736db137f94c8b92f1}} 
+\index{fox::Scene@{fox::Scene}!get\_world\_physic@{get\_world\_physic}}
+\index{get\_world\_physic@{get\_world\_physic}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{get\_world\_physic()}{get\_world\_physic()}}
+{\footnotesize\ttfamily reactphysics3d\+::\+Physics\+World\& fox\+::\+Scene\+::get\+\_\+world\+\_\+physic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the physics world. 
+
+\begin{DoxyReturn}{Returns}
+the physics world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Scene_a5ad98ab2396fbdcad8622754aa24c567}\label{classfox_1_1Scene_a5ad98ab2396fbdcad8622754aa24c567}} 
+\index{fox::Scene@{fox::Scene}!name@{name}}
+\index{name@{name}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string fox\+::\+Scene\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the scene. 
+
+\begin{DoxyReturn}{Returns}
+the name of the scene as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Scene_a0574cdd78aa4c57179f062f29fe09e56}\label{classfox_1_1Scene_a0574cdd78aa4c57179f062f29fe09e56}} 
+\index{fox::Scene@{fox::Scene}!on\_create@{on\_create}}
+\index{on\_create@{on\_create}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{on\_create()}{on\_create()}}
+{\footnotesize\ttfamily virtual void fox\+::\+Scene\+::on\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called when scene initially created. Called once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_a4cb697aab83c9c07e8ae4b800dec043d}\label{classfox_1_1Scene_a4cb697aab83c9c07e8ae4b800dec043d}} 
+\index{fox::Scene@{fox::Scene}!on\_destroy@{on\_destroy}}
+\index{on\_destroy@{on\_destroy}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{on\_destroy()}{on\_destroy()}}
+{\footnotesize\ttfamily virtual void fox\+::\+Scene\+::on\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called when scene destroyed. Called at most once (if a scene is not removed from the game, this will never be called). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_af47a8d9e1dcaec858f05bc790feb12f6}\label{classfox_1_1Scene_af47a8d9e1dcaec858f05bc790feb12f6}} 
+\index{fox::Scene@{fox::Scene}!on\_disable@{on\_disable}}
+\index{on\_disable@{on\_disable}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{on\_disable()}{on\_disable()}}
+{\footnotesize\ttfamily virtual void fox\+::\+Scene\+::on\+\_\+disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called whenever a transition out of a scene occurs. Can be called many times in a typical game cycle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_ace91725d607edfbd6be111ce0bfe325f}\label{classfox_1_1Scene_ace91725d607edfbd6be111ce0bfe325f}} 
+\index{fox::Scene@{fox::Scene}!on\_enable@{on\_enable}}
+\index{on\_enable@{on\_enable}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{on\_enable()}{on\_enable()}}
+{\footnotesize\ttfamily virtual void fox\+::\+Scene\+::on\+\_\+enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called whenever a scene is transitioned into. Can be called many times in a typical game cycle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_abc42a9bfc879b999e5db5be59446475b}\label{classfox_1_1Scene_abc42a9bfc879b999e5db5be59446475b}} 
+\index{fox::Scene@{fox::Scene}!on\_update@{on\_update}}
+\index{on\_update@{on\_update}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{on\_update()}{on\_update()}}
+{\footnotesize\ttfamily virtual void fox\+::\+Scene\+::on\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Scene_a83411024d0cb7dda1bc128f9324233c9}\label{classfox_1_1Scene_a83411024d0cb7dda1bc128f9324233c9}} 
+\index{fox::Scene@{fox::Scene}!update@{update}}
+\index{update@{update}!fox::Scene@{fox::Scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void fox\+::\+Scene\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Application}{Application}} \&}]{app }\end{DoxyParamCaption})}
+
+
+
+This function called the on\+\_\+update function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & reference to the main application \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Scene.\+hpp\end{DoxyCompactItemize}

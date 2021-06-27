@@ -1,0 +1,132 @@
+\hypertarget{classfox_1_1ComponentArray}{}\doxysection{fox\+::Component\+Array$<$ T $>$ Class Template Reference}
+\label{classfox_1_1ComponentArray}\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+
+
+Inheritance diagram for fox\+::Component\+Array$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for fox\+::Component\+Array$<$ T $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{classfox_1_1ComponentArray_ae88e0b8993368e64a8d31f14738cb3fa}{Insert\+Data}} (Entity\+Id entity, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Insert a new Component at the entity index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1ComponentArray_ab8418a43a817c0a748ecd1322ccaa1d2}{Remove\+Data}} (Entity\+Id entity)
+\begin{DoxyCompactList}\small\item\em Remove a Component at the entity index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$ T \& $>$ \mbox{\hyperlink{classfox_1_1ComponentArray_aa82c71028cc37934804eb4248b01a7e9}{Get\+Data}} (Entity\+Id entity)
+\begin{DoxyCompactList}\small\item\em Get the Component object at the entity index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$ const T \& $>$ \mbox{\hyperlink{classfox_1_1ComponentArray_ab4c55642ea1275c56857fd85d715708d}{Get\+Data}} (Entity\+Id entity) const
+\begin{DoxyCompactList}\small\item\em Get the Component object at the entity index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1ComponentArray_af5a2f307eb0c7ca70f1966a2714a31f7}{Entity\+Destroyed}} (Entity\+Id entity) override
+\begin{DoxyCompactList}\small\item\em Called when a entity is destroyed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1ComponentArray_a8016d68845879a4383810543ffe32852}\label{classfox_1_1ComponentArray_a8016d68845879a4383810543ffe32852}} 
+virtual void \mbox{\hyperlink{classfox_1_1ComponentArray_a8016d68845879a4383810543ffe32852}{clear}} () override
+\begin{DoxyCompactList}\small\item\em Clear the component array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1ComponentArray_af5a2f307eb0c7ca70f1966a2714a31f7}\label{classfox_1_1ComponentArray_af5a2f307eb0c7ca70f1966a2714a31f7}} 
+\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}!EntityDestroyed@{EntityDestroyed}}
+\index{EntityDestroyed@{EntityDestroyed}!fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EntityDestroyed()}{EntityDestroyed()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classfox_1_1ComponentArray}{fox\+::\+Component\+Array}}$<$ T $>$\+::Entity\+Destroyed (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a entity is destroyed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classfox_1_1IComponentArray_ad455959bd7091e8e06d066d75373f22e}{fox\+::\+I\+Component\+Array}}.
+
+\mbox{\Hypertarget{classfox_1_1ComponentArray_aa82c71028cc37934804eb4248b01a7e9}\label{classfox_1_1ComponentArray_aa82c71028cc37934804eb4248b01a7e9}} 
+\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}!GetData@{GetData}}
+\index{GetData@{GetData}!fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$T\&$>$ \mbox{\hyperlink{classfox_1_1ComponentArray}{fox\+::\+Component\+Array}}$<$ T $>$\+::Get\+Data (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Component object at the entity index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fox\+::\+Option$<$\+T\&$>$ optionnal value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ComponentArray_ab4c55642ea1275c56857fd85d715708d}\label{classfox_1_1ComponentArray_ab4c55642ea1275c56857fd85d715708d}} 
+\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}!GetData@{GetData}}
+\index{GetData@{GetData}!fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classfox_1_1Option}{fox\+::\+Option}}$<$const T\&$>$ \mbox{\hyperlink{classfox_1_1ComponentArray}{fox\+::\+Component\+Array}}$<$ T $>$\+::Get\+Data (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Component object at the entity index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fox\+::\+Option$<$\+T\&$>$ optionnal value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ComponentArray_ae88e0b8993368e64a8d31f14738cb3fa}\label{classfox_1_1ComponentArray_ae88e0b8993368e64a8d31f14738cb3fa}} 
+\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}!InsertData@{InsertData}}
+\index{InsertData@{InsertData}!fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertData()}{InsertData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename... Args$>$ \\
+void \mbox{\hyperlink{classfox_1_1ComponentArray}{fox\+::\+Component\+Array}}$<$ T $>$\+::Insert\+Data (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert a new Component at the entity index. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & the Arguments types for constructor of the component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the index in the array \\
+\hline
+{\em args} & the arguments for constructor of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1ComponentArray_ab8418a43a817c0a748ecd1322ccaa1d2}\label{classfox_1_1ComponentArray_ab8418a43a817c0a748ecd1322ccaa1d2}} 
+\index{fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}!RemoveData@{RemoveData}}
+\index{RemoveData@{RemoveData}!fox::ComponentArray$<$ T $>$@{fox::ComponentArray$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveData()}{RemoveData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classfox_1_1ComponentArray}{fox\+::\+Component\+Array}}$<$ T $>$\+::Remove\+Data (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a Component at the entity index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the index \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/Component\+Array.\+hpp\end{DoxyCompactItemize}

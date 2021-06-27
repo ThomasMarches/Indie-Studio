@@ -1,0 +1,247 @@
+\hypertarget{structfox_1_1Transform}{}\doxysection{fox\+::Transform Struct Reference}
+\label{structfox_1_1Transform}\index{fox::Transform@{fox::Transform}}
+
+
+Collaboration diagram for fox\+::Transform\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_a5bdd56d924c9db143801ba9f5ca02878}\label{structfox_1_1Transform_a5bdd56d924c9db143801ba9f5ca02878}} 
+\mbox{\hyperlink{structfox_1_1Transform_a5bdd56d924c9db143801ba9f5ca02878}{Transform}} ()
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfox_1_1Transform_a1f73b6f5cc257765349195e2f79a8ff9}{Transform}} (\mbox{\hyperlink{structVec3}{Vec3}} pos)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfox_1_1Transform_a75693c3aa21d3f9aeb3776dfab2f9685}{Transform}} (\mbox{\hyperlink{structVec3}{Vec3}} pos, \mbox{\hyperlink{structVec3}{Vec3}} sc)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfox_1_1Transform_ac03457f6231fb30428398567b1da6ae8}{Transform}} (\mbox{\hyperlink{structVec3}{Vec3}} pos, \mbox{\hyperlink{structquat}{quat}} rot)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfox_1_1Transform_affa232236b56e88f660a08953b943fd2}{Transform}} (\mbox{\hyperlink{structVec3}{Vec3}} pos, \mbox{\hyperlink{structquat}{quat}} rot, \mbox{\hyperlink{structVec3}{Vec3}} sc)
+\begin{DoxyCompactList}\small\item\em Contructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfox_1_1Transform_a9bc81c10f11edef4d87796075621b09e}\label{structfox_1_1Transform_a9bc81c10f11edef4d87796075621b09e}} 
+{\bfseries operator reactphysics3d\+::\+Transform} ()
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_aee0952b5c9332a5d90a66b097fac1585}\label{structfox_1_1Transform_aee0952b5c9332a5d90a66b097fac1585}} 
+{\bfseries operator reactphysics3d\+::\+Transform} () const
+\item 
+\mbox{\hyperlink{structVec3}{Vec3}} \mbox{\hyperlink{structfox_1_1Transform_af429f73ea4eb18c2d99146b53838d1f0}{get\+\_\+pos}} () const
+\begin{DoxyCompactList}\small\item\em Get the position (local or global) if the transform have parent the local position will be return otherwise it the global position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structquat}{quat}} \mbox{\hyperlink{structfox_1_1Transform_aab746e33146a9b38bcdf9e0cda62bf79}{get\+\_\+rot}} () const
+\begin{DoxyCompactList}\small\item\em Get the rotation (local or global) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVec3}{Vec3}} \mbox{\hyperlink{structfox_1_1Transform_ac226daaaa239c7fed6d0139bf5c91ffc}{get\+\_\+scale}} () const
+\begin{DoxyCompactList}\small\item\em Get the scale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structfox_1_1Transform}{Transform}} \& \mbox{\hyperlink{structfox_1_1Transform_a91d0e70d7403b6c0f0e53b9e4b10b6fe}{get\+\_\+parent}} () const
+\begin{DoxyCompactList}\small\item\em Get the parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structfox_1_1Transform_acb8d7b91912a027e73c3554f9d80b2ce}{set\+\_\+pos}} (const \mbox{\hyperlink{structVec3}{Vec3}} \&v)
+\begin{DoxyCompactList}\small\item\em Set the position of the transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structfox_1_1Transform_a3a255aa829d8b0f2dd89a75b79b48e59}{set\+\_\+pos}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Set the position of the transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structfox_1_1Transform_a2906ff84f4d5c911db35a475f41c675a}{set\+\_\+parent}} (\mbox{\hyperlink{structfox_1_1Transform}{Transform}} \&p)
+\begin{DoxyCompactList}\small\item\em Set the parent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structfox_1_1Transform_abe5e1afb3ecac5602ee48650a341d421}\label{structfox_1_1Transform_abe5e1afb3ecac5602ee48650a341d421}} 
+void \mbox{\hyperlink{structfox_1_1Transform_abe5e1afb3ecac5602ee48650a341d421}{update\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Use in the gameloop to update de hierarchy value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_aa67a0680acdc3c21cf4b60b2311e3fb3}\label{structfox_1_1Transform_aa67a0680acdc3c21cf4b60b2311e3fb3}} 
+\mbox{\hyperlink{structVec3}{Vec3}} {\bfseries position}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_aba6e3e84a2da86eef08b64be5e66cfbe}\label{structfox_1_1Transform_aba6e3e84a2da86eef08b64be5e66cfbe}} 
+\mbox{\hyperlink{structVec3}{Vec3}} {\bfseries local\+\_\+position}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_a9a8fbf1841a45b636a4735bb8f62c7c2}\label{structfox_1_1Transform_a9a8fbf1841a45b636a4735bb8f62c7c2}} 
+\mbox{\hyperlink{structquat}{quat}} {\bfseries local\+\_\+rotation}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_a5a2c4d85d733dea40437db13b87cd064}\label{structfox_1_1Transform_a5a2c4d85d733dea40437db13b87cd064}} 
+\mbox{\hyperlink{structquat}{quat}} {\bfseries rotation}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_a022b2a037897102bb90c9fe85bab9cac}\label{structfox_1_1Transform_a022b2a037897102bb90c9fe85bab9cac}} 
+\mbox{\hyperlink{structVec3}{Vec3}} {\bfseries scale}
+\item 
+\mbox{\Hypertarget{structfox_1_1Transform_ad78a0d0d02298d4e0e9db9881e5f30e7}\label{structfox_1_1Transform_ad78a0d0d02298d4e0e9db9881e5f30e7}} 
+\mbox{\hyperlink{structfox_1_1Transform}{Transform}} $\ast$ {\bfseries parent}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structfox_1_1Transform_a1f73b6f5cc257765349195e2f79a8ff9}\label{structfox_1_1Transform_a1f73b6f5cc257765349195e2f79a8ff9}} 
+\index{fox::Transform@{fox::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily fox\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structfox_1_1Transform_a75693c3aa21d3f9aeb3776dfab2f9685}\label{structfox_1_1Transform_a75693c3aa21d3f9aeb3776dfab2f9685}} 
+\index{fox::Transform@{fox::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily fox\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{pos,  }\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{sc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position of the object \\
+\hline
+{\em sc} & the scale of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structfox_1_1Transform_ac03457f6231fb30428398567b1da6ae8}\label{structfox_1_1Transform_ac03457f6231fb30428398567b1da6ae8}} 
+\index{fox::Transform@{fox::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily fox\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{pos,  }\item[{\mbox{\hyperlink{structquat}{quat}}}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position of the object \\
+\hline
+{\em rot} & the rotation of the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structfox_1_1Transform_affa232236b56e88f660a08953b943fd2}\label{structfox_1_1Transform_affa232236b56e88f660a08953b943fd2}} 
+\index{fox::Transform@{fox::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily fox\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{pos,  }\item[{\mbox{\hyperlink{structquat}{quat}}}]{rot,  }\item[{\mbox{\hyperlink{structVec3}{Vec3}}}]{sc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position of the object \\
+\hline
+{\em rot} & the rotation of the object \\
+\hline
+{\em sc} & the scale of the object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structfox_1_1Transform_a91d0e70d7403b6c0f0e53b9e4b10b6fe}\label{structfox_1_1Transform_a91d0e70d7403b6c0f0e53b9e4b10b6fe}} 
+\index{fox::Transform@{fox::Transform}!get\_parent@{get\_parent}}
+\index{get\_parent@{get\_parent}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{get\_parent()}{get\_parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structfox_1_1Transform}{Transform}}\& fox\+::\+Transform\+::get\+\_\+parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the parent. 
+
+\begin{DoxyReturn}{Returns}
+the parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structfox_1_1Transform_af429f73ea4eb18c2d99146b53838d1f0}\label{structfox_1_1Transform_af429f73ea4eb18c2d99146b53838d1f0}} 
+\index{fox::Transform@{fox::Transform}!get\_pos@{get\_pos}}
+\index{get\_pos@{get\_pos}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{get\_pos()}{get\_pos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVec3}{Vec3}} fox\+::\+Transform\+::get\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the position (local or global) if the transform have parent the local position will be return otherwise it the global position. 
+
+\begin{DoxyReturn}{Returns}
+the position (local or global) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structfox_1_1Transform_aab746e33146a9b38bcdf9e0cda62bf79}\label{structfox_1_1Transform_aab746e33146a9b38bcdf9e0cda62bf79}} 
+\index{fox::Transform@{fox::Transform}!get\_rot@{get\_rot}}
+\index{get\_rot@{get\_rot}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{get\_rot()}{get\_rot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structquat}{quat}} fox\+::\+Transform\+::get\+\_\+rot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the rotation (local or global) 
+
+
+\begin{DoxyItemize}
+\item if the transform have parent the local rotation will be return otherwise it the global rotation \begin{DoxyReturn}{Returns}
+the rotation (local or global) 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{structfox_1_1Transform_ac226daaaa239c7fed6d0139bf5c91ffc}\label{structfox_1_1Transform_ac226daaaa239c7fed6d0139bf5c91ffc}} 
+\index{fox::Transform@{fox::Transform}!get\_scale@{get\_scale}}
+\index{get\_scale@{get\_scale}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{get\_scale()}{get\_scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVec3}{Vec3}} fox\+::\+Transform\+::get\+\_\+scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scale. 
+
+\begin{DoxyReturn}{Returns}
+the scale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structfox_1_1Transform_a2906ff84f4d5c911db35a475f41c675a}\label{structfox_1_1Transform_a2906ff84f4d5c911db35a475f41c675a}} 
+\index{fox::Transform@{fox::Transform}!set\_parent@{set\_parent}}
+\index{set\_parent@{set\_parent}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{set\_parent()}{set\_parent()}}
+{\footnotesize\ttfamily void fox\+::\+Transform\+::set\+\_\+parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfox_1_1Transform}{Transform}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the parent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structfox_1_1Transform_acb8d7b91912a027e73c3554f9d80b2ce}\label{structfox_1_1Transform_acb8d7b91912a027e73c3554f9d80b2ce}} 
+\index{fox::Transform@{fox::Transform}!set\_pos@{set\_pos}}
+\index{set\_pos@{set\_pos}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{set\_pos()}{set\_pos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fox\+::\+Transform\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structVec3}{Vec3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position of the transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the new position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structfox_1_1Transform_a3a255aa829d8b0f2dd89a75b79b48e59}\label{structfox_1_1Transform_a3a255aa829d8b0f2dd89a75b79b48e59}} 
+\index{fox::Transform@{fox::Transform}!set\_pos@{set\_pos}}
+\index{set\_pos@{set\_pos}!fox::Transform@{fox::Transform}}
+\doxysubsubsection{\texorpdfstring{set\_pos()}{set\_pos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fox\+::\+Transform\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the position of the transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the new X value \\
+\hline
+{\em y} & the new Y value \\
+\hline
+{\em z} & the new Z value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Transform.\+hpp\end{DoxyCompactItemize}

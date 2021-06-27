@@ -1,0 +1,120 @@
+\hypertarget{classfox_1_1Pipeline}{}\doxysection{fox\+::Pipeline Class Reference}
+\label{classfox_1_1Pipeline}\index{fox::Pipeline@{fox::Pipeline}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Pipeline_a9c30bf862182f1862335b357a56be48b}\label{classfox_1_1Pipeline_a9c30bf862182f1862335b357a56be48b}} 
+using {\bfseries S\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1Pipeline}{Pipeline}} $>$
+\item 
+\mbox{\Hypertarget{classfox_1_1Pipeline_ad4336a12c13b27087813a3a752f94b54}\label{classfox_1_1Pipeline_ad4336a12c13b27087813a3a752f94b54}} 
+using {\bfseries U\+Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1Pipeline}{Pipeline}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Pipeline_aaaec509d9e4fe88c1340a41d8a2dbc3e}\label{classfox_1_1Pipeline_aaaec509d9e4fe88c1340a41d8a2dbc3e}} 
+\mbox{\hyperlink{classfox_1_1Pipeline_aaaec509d9e4fe88c1340a41d8a2dbc3e}{Pipeline}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Pipeline_ab510252a54ad2d67a6be045655d08801}\label{classfox_1_1Pipeline_ab510252a54ad2d67a6be045655d08801}} 
+\mbox{\hyperlink{classfox_1_1Pipeline_ab510252a54ad2d67a6be045655d08801}{$\sim$\+Pipeline}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Pipeline_af8ee352ae583c381a26725da1a4b8e63}{add\+\_\+phase}} (std\+::uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Add a new phase (used for systems) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Pipeline_a6a2c142a2edc0a40abad0457a6542827}{add\+\_\+system}} (std\+::uint32\+\_\+t id, \mbox{\hyperlink{classfox_1_1ASystem}{A\+System}} $\ast$p\+Sys)
+\begin{DoxyCompactList}\small\item\em Add a system to a phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Pipeline_acf81258c75b2cb133ce621dfeebd0a66}{remove}} (std\+::uint32\+\_\+t id, \mbox{\hyperlink{classfox_1_1ASystem}{A\+System}} $\ast$p\+Sys)
+\begin{DoxyCompactList}\small\item\em Remove a system to a phase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Pipeline_a3a8058d29a00627b47318291177466d7}{run\+\_\+phase}} (std\+::uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Run a phase. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfox_1_1Pipeline_a53de75fe89024c990c7aa20bf4a65bbb}{has\+\_\+phase}} (std\+::uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Check if a phase exist or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Pipeline_af8ee352ae583c381a26725da1a4b8e63}\label{classfox_1_1Pipeline_af8ee352ae583c381a26725da1a4b8e63}} 
+\index{fox::Pipeline@{fox::Pipeline}!add\_phase@{add\_phase}}
+\index{add\_phase@{add\_phase}!fox::Pipeline@{fox::Pipeline}}
+\doxysubsubsection{\texorpdfstring{add\_phase()}{add\_phase()}}
+{\footnotesize\ttfamily void fox\+::\+Pipeline\+::add\+\_\+phase (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+Add a new phase (used for systems) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Pipeline_a6a2c142a2edc0a40abad0457a6542827}\label{classfox_1_1Pipeline_a6a2c142a2edc0a40abad0457a6542827}} 
+\index{fox::Pipeline@{fox::Pipeline}!add\_system@{add\_system}}
+\index{add\_system@{add\_system}!fox::Pipeline@{fox::Pipeline}}
+\doxysubsubsection{\texorpdfstring{add\_system()}{add\_system()}}
+{\footnotesize\ttfamily void fox\+::\+Pipeline\+::add\+\_\+system (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id,  }\item[{\mbox{\hyperlink{classfox_1_1ASystem}{A\+System}} $\ast$}]{p\+Sys }\end{DoxyParamCaption})}
+
+
+
+Add a system to a phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the pahse id \\
+\hline
+{\em p\+Sys} & the system to add in the phase \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Pipeline_a53de75fe89024c990c7aa20bf4a65bbb}\label{classfox_1_1Pipeline_a53de75fe89024c990c7aa20bf4a65bbb}} 
+\index{fox::Pipeline@{fox::Pipeline}!has\_phase@{has\_phase}}
+\index{has\_phase@{has\_phase}!fox::Pipeline@{fox::Pipeline}}
+\doxysubsubsection{\texorpdfstring{has\_phase()}{has\_phase()}}
+{\footnotesize\ttfamily bool fox\+::\+Pipeline\+::has\+\_\+phase (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+Check if a phase exist or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the phase id exist otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Pipeline_acf81258c75b2cb133ce621dfeebd0a66}\label{classfox_1_1Pipeline_acf81258c75b2cb133ce621dfeebd0a66}} 
+\index{fox::Pipeline@{fox::Pipeline}!remove@{remove}}
+\index{remove@{remove}!fox::Pipeline@{fox::Pipeline}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void fox\+::\+Pipeline\+::remove (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id,  }\item[{\mbox{\hyperlink{classfox_1_1ASystem}{A\+System}} $\ast$}]{p\+Sys }\end{DoxyParamCaption})}
+
+
+
+Remove a system to a phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the pahse id \\
+\hline
+{\em p\+Sys} & the system to remove in the phase \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Pipeline_a3a8058d29a00627b47318291177466d7}\label{classfox_1_1Pipeline_a3a8058d29a00627b47318291177466d7}} 
+\index{fox::Pipeline@{fox::Pipeline}!run\_phase@{run\_phase}}
+\index{run\_phase@{run\_phase}!fox::Pipeline@{fox::Pipeline}}
+\doxysubsubsection{\texorpdfstring{run\_phase()}{run\_phase()}}
+{\footnotesize\ttfamily void fox\+::\+Pipeline\+::run\+\_\+phase (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id }\end{DoxyParamCaption})}
+
+
+
+Run a phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the event \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/Pipeline.\+hpp\end{DoxyCompactItemize}

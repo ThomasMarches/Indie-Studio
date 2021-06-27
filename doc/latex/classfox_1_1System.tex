@@ -1,0 +1,193 @@
+\hypertarget{classfox_1_1System}{}\doxysection{fox\+::System$<$ Cs $>$ Class Template Reference}
+\label{classfox_1_1System}\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+
+
+Inheritance diagram for fox\+::System$<$ Cs $>$\+:
+% FIG 0
+
+
+Collaboration diagram for fox\+::System$<$ Cs $>$\+:
+% FIG 1
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1System_a108ec6e2deb462e583bd77fa43eee1ab}\label{classfox_1_1System_a108ec6e2deb462e583bd77fa43eee1ab}} 
+using {\bfseries System\+Fn} = std\+::function$<$ void(\mbox{\hyperlink{classfox_1_1Entity}{Entity}} o\+Entity, Cs \&...)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfox_1_1System_a9ac25ceae6d11b06a64dea0025bbed05}{System}} (\mbox{\hyperlink{classfox_1_1World}{World}} \&o\+World, std\+::size\+\_\+t num\+\_\+components)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classfox_1_1System}{System}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1System_a8d4b4d00d2b8342451d4b9593efd3467}{each}} (System\+Fn update\+Func)
+\begin{DoxyCompactList}\small\item\em Store the function for this \mbox{\hyperlink{classfox_1_1System}{System}} that will be called when it receive an event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1System}{System}}$<$ Cs... $>$ \& \mbox{\hyperlink{classfox_1_1System_a6e1906ed902ed71436618fe179f94247}{kind}} (std\+::uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Set the event to listen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1System_a2bd7b1f5fddbd04defc843b580ae3f53}\label{classfox_1_1System_a2bd7b1f5fddbd04defc843b580ae3f53}} 
+\mbox{\hyperlink{classfox_1_1System}{System}}$<$ Cs... $>$ \& {\bfseries force\+\_\+update} (bool value)
+\item 
+\mbox{\Hypertarget{classfox_1_1System_af947333f29dd4ab2557466840e2229e9}\label{classfox_1_1System_af947333f29dd4ab2557466840e2229e9}} 
+void \mbox{\hyperlink{classfox_1_1System_af947333f29dd4ab2557466840e2229e9}{run}} ()
+\begin{DoxyCompactList}\small\item\em Run the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1System_acb2ca0e7b903b5b35e2773793002af2b}{run}} (Entity\+Id e)
+\begin{DoxyCompactList}\small\item\em Run the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1System_a868bc5055d6945e5b876d582044fe189}{On\+Add\+Entity}} (Entity\+Id o\+Entity)
+\begin{DoxyCompactList}\small\item\em This function will be called in the world, when trigger the On\+Add event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1System_af41f867ed970cec160ec9d3f0463fca2}{On\+Set\+Entity}} (Entity\+Id o\+Entity)
+\begin{DoxyCompactList}\small\item\em This function will be called in the world, when trigger the On\+Set event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1System_a47bfce37b436b5bff1a403269affdf48}{On\+Remove\+Entity}} (Entity\+Id o\+Entity)
+\begin{DoxyCompactList}\small\item\em This function will be called in the world, when trigger the On\+Remove event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1System_a2420c9d7f88b4c39400031a09b7528f3}\label{classfox_1_1System_a2420c9d7f88b4c39400031a09b7528f3}} 
+std\+::string {\bfseries m\+\_\+str\+Name}
+\item 
+\mbox{\Hypertarget{classfox_1_1System_a2e8ea05ff5565c902b38f513eecd0a15}\label{classfox_1_1System_a2e8ea05ff5565c902b38f513eecd0a15}} 
+System\+Fn {\bfseries m\+\_\+o\+Func}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfox_1_1System_a9ac25ceae6d11b06a64dea0025bbed05}\label{classfox_1_1System_a9ac25ceae6d11b06a64dea0025bbed05}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!System@{System}}
+\index{System@{System}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}}
+{\footnotesize\ttfamily template$<$typename... Cs$>$ \\
+\mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::\mbox{\hyperlink{classfox_1_1System}{System}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1World}{World}} \&}]{o\+World,  }\item[{std\+::size\+\_\+t}]{num\+\_\+components }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classfox_1_1System}{System}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+World} & a reference to the world \\
+\hline
+{\em num\+\_\+components} & the number of registered components in the world \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1System_a8d4b4d00d2b8342451d4b9593efd3467}\label{classfox_1_1System_a8d4b4d00d2b8342451d4b9593efd3467}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!each@{each}}
+\index{each@{each}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily template$<$class... Cs$>$ \\
+void \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::each (\begin{DoxyParamCaption}\item[{System\+Fn}]{update\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Store the function for this \mbox{\hyperlink{classfox_1_1System}{System}} that will be called when it receive an event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+Func} & the function that will called \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1System_a6e1906ed902ed71436618fe179f94247}\label{classfox_1_1System_a6e1906ed902ed71436618fe179f94247}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!kind@{kind}}
+\index{kind@{kind}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{kind()}{kind()}}
+{\footnotesize\ttfamily template$<$class... Cs$>$ \\
+\mbox{\hyperlink{classfox_1_1System}{System}}$<$Cs...$>$\& \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::kind (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the event to listen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id of the event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+System$<$\+Cs...$>$\& a reference to it self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1System_a868bc5055d6945e5b876d582044fe189}\label{classfox_1_1System_a868bc5055d6945e5b876d582044fe189}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!OnAddEntity@{OnAddEntity}}
+\index{OnAddEntity@{OnAddEntity}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{OnAddEntity()}{OnAddEntity()}}
+{\footnotesize\ttfamily template$<$typename... Cs$>$ \\
+void \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::On\+Add\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function will be called in the world, when trigger the On\+Add event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classfox_1_1ASystem_a57d4dc494ae29090ed03e8ed39aa63ec}{fox\+::\+A\+System}}.
+
+\mbox{\Hypertarget{classfox_1_1System_a47bfce37b436b5bff1a403269affdf48}\label{classfox_1_1System_a47bfce37b436b5bff1a403269affdf48}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!OnRemoveEntity@{OnRemoveEntity}}
+\index{OnRemoveEntity@{OnRemoveEntity}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{OnRemoveEntity()}{OnRemoveEntity()}}
+{\footnotesize\ttfamily template$<$typename... Cs$>$ \\
+void \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::On\+Remove\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function will be called in the world, when trigger the On\+Remove event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classfox_1_1ASystem_aacb1e5eda150dd0023604bc79fcf4059}{fox\+::\+A\+System}}.
+
+\mbox{\Hypertarget{classfox_1_1System_af41f867ed970cec160ec9d3f0463fca2}\label{classfox_1_1System_af41f867ed970cec160ec9d3f0463fca2}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!OnSetEntity@{OnSetEntity}}
+\index{OnSetEntity@{OnSetEntity}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{OnSetEntity()}{OnSetEntity()}}
+{\footnotesize\ttfamily template$<$typename... Cs$>$ \\
+void \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::On\+Set\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function will be called in the world, when trigger the On\+Set event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classfox_1_1ASystem_a80acc6bc7f6ee033ee2fb5528505ac50}{fox\+::\+A\+System}}.
+
+\mbox{\Hypertarget{classfox_1_1System_acb2ca0e7b903b5b35e2773793002af2b}\label{classfox_1_1System_acb2ca0e7b903b5b35e2773793002af2b}} 
+\index{fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}!run@{run}}
+\index{run@{run}!fox::System$<$ Cs $>$@{fox::System$<$ Cs $>$}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily template$<$typename... Cs$>$ \\
+void \mbox{\hyperlink{classfox_1_1System}{fox\+::\+System}}$<$ Cs $>$\+::run (\begin{DoxyParamCaption}\item[{Entity\+Id}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classfox_1_1ASystem_a38c7c8f0eebd90b3131fe1bbad4bcb05}{fox\+::\+A\+System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/World.\+hpp\end{DoxyCompactItemize}

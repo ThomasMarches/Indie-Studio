@@ -1,0 +1,137 @@
+\hypertarget{classfox_1_1Button}{}\doxysection{fox\+::Button Class Reference}
+\label{classfox_1_1Button}\index{fox::Button@{fox::Button}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfox_1_1Button_a39f9ba67eb28916b39da970360900818}{Button}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Button_afb9649255fa09eebccd9bff40539b1ea}{Button}} (const std\+::string \&file\+Name, std\+::function$<$ void()$>$ cb)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Button_a250419d23a41a543899e6d913194094e}{Button}} (\mbox{\hyperlink{classfox_1_1Button}{Button}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Button_a42d9266dc917cac522a9d6f8c21896f4}\label{classfox_1_1Button_a42d9266dc917cac522a9d6f8c21896f4}} 
+\mbox{\hyperlink{classfox_1_1Button}{Button}} \& {\bfseries operator=} (\mbox{\hyperlink{classfox_1_1Button}{Button}} \&\&rhs)
+\item 
+\mbox{\Hypertarget{classfox_1_1Button_a8433f0a15a4550ab03d8a86b4f452b9d}\label{classfox_1_1Button_a8433f0a15a4550ab03d8a86b4f452b9d}} 
+void \mbox{\hyperlink{classfox_1_1Button_a8433f0a15a4550ab03d8a86b4f452b9d}{click}} ()
+\begin{DoxyCompactList}\small\item\em Notify that the button have been click. \end{DoxyCompactList}\item 
+ray\+::\+Texture \& \mbox{\hyperlink{classfox_1_1Button_a81726f498a2bb92290496ba356c6d626}{sprite}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture of the button. \end{DoxyCompactList}\item 
+Btn\+State \mbox{\hyperlink{classfox_1_1Button_ab940145ad285adb2ddcb00c48412119f}{state}} ()
+\begin{DoxyCompactList}\small\item\em Get the current state. \end{DoxyCompactList}\item 
+Btn\+State \mbox{\hyperlink{classfox_1_1Button_a7e0077f430d58d12a05a5429a9b01246}{prev\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Get the previous state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Button_a571a031d744e258de1ddc49bfc7587a3}{set\+\_\+state}} (Btn\+State s)
+\begin{DoxyCompactList}\small\item\em Set the current state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfox_1_1Button_a39f9ba67eb28916b39da970360900818}\label{classfox_1_1Button_a39f9ba67eb28916b39da970360900818}} 
+\index{fox::Button@{fox::Button}!Button@{Button}}
+\index{Button@{Button}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily fox\+::\+Button\+::\+Button (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the filepath to the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Button_afb9649255fa09eebccd9bff40539b1ea}\label{classfox_1_1Button_afb9649255fa09eebccd9bff40539b1ea}} 
+\index{fox::Button@{fox::Button}!Button@{Button}}
+\index{Button@{Button}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily fox\+::\+Button\+::\+Button (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{std\+::function$<$ void()$>$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & the filepath to the texture \\
+\hline
+{\em cb} & the function for the on\+\_\+click event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Button_a250419d23a41a543899e6d913194094e}\label{classfox_1_1Button_a250419d23a41a543899e6d913194094e}} 
+\index{fox::Button@{fox::Button}!Button@{Button}}
+\index{Button@{Button}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily fox\+::\+Button\+::\+Button (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1Button}{Button}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the r-\/value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Button_a7e0077f430d58d12a05a5429a9b01246}\label{classfox_1_1Button_a7e0077f430d58d12a05a5429a9b01246}} 
+\index{fox::Button@{fox::Button}!prev\_state@{prev\_state}}
+\index{prev\_state@{prev\_state}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{prev\_state()}{prev\_state()}}
+{\footnotesize\ttfamily Btn\+State fox\+::\+Button\+::prev\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the previous state. 
+
+\begin{DoxyReturn}{Returns}
+the previous state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Button_a571a031d744e258de1ddc49bfc7587a3}\label{classfox_1_1Button_a571a031d744e258de1ddc49bfc7587a3}} 
+\index{fox::Button@{fox::Button}!set\_state@{set\_state}}
+\index{set\_state@{set\_state}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{set\_state()}{set\_state()}}
+{\footnotesize\ttfamily void fox\+::\+Button\+::set\+\_\+state (\begin{DoxyParamCaption}\item[{Btn\+State}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Button_a81726f498a2bb92290496ba356c6d626}\label{classfox_1_1Button_a81726f498a2bb92290496ba356c6d626}} 
+\index{fox::Button@{fox::Button}!sprite@{sprite}}
+\index{sprite@{sprite}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{sprite()}{sprite()}}
+{\footnotesize\ttfamily ray\+::\+Texture\& fox\+::\+Button\+::sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture of the button. 
+
+\begin{DoxyReturn}{Returns}
+the texture of the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Button_ab940145ad285adb2ddcb00c48412119f}\label{classfox_1_1Button_ab940145ad285adb2ddcb00c48412119f}} 
+\index{fox::Button@{fox::Button}!state@{state}}
+\index{state@{state}!fox::Button@{fox::Button}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily Btn\+State fox\+::\+Button\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current state. 
+
+\begin{DoxyReturn}{Returns}
+the current state 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Button.\+hpp\end{DoxyCompactItemize}

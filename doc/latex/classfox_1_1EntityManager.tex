@@ -1,0 +1,171 @@
+\hypertarget{classfox_1_1EntityManager}{}\doxysection{fox\+::Entity\+Manager Class Reference}
+\label{classfox_1_1EntityManager}\index{fox::EntityManager@{fox::EntityManager}}
+
+
+Collaboration diagram for fox\+::Entity\+Manager\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_a8ec51ccdaba547da08fb5f3a6ec463e8}\label{classfox_1_1EntityManager_a8ec51ccdaba547da08fb5f3a6ec463e8}} 
+using {\bfseries Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1EntityManager}{Entity\+Manager}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_a10325c1aaa66a53999e0145660851d55}\label{classfox_1_1EntityManager_a10325c1aaa66a53999e0145660851d55}} 
+\mbox{\hyperlink{classfox_1_1EntityManager_a10325c1aaa66a53999e0145660851d55}{Entity\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classfox_1_1Entity}{Entity}} Manager object. \end{DoxyCompactList}\item 
+Entity\+Id \mbox{\hyperlink{classfox_1_1EntityManager_ae1b2479a981743a986d994518df37123}{Create\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Create an \mbox{\hyperlink{classfox_1_1Entity}{Entity}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1EntityManager_a71601e8d749050794c4a4ec1ed5e5cf1}{For\+Each}} (std\+::function$<$ bool(Entity\+Id)$>$ fn)
+\begin{DoxyCompactList}\small\item\em Perform a foreach in all entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1EntityManager_a9c0f4ebb9828fdd8e9add330274a7736}{Destroy\+Entity}} (Entity\+Id entity)
+\begin{DoxyCompactList}\small\item\em Remove the entity to the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_a681f00c8c196dada60c7949a98914025}\label{classfox_1_1EntityManager_a681f00c8c196dada60c7949a98914025}} 
+void \mbox{\hyperlink{classfox_1_1EntityManager_a681f00c8c196dada60c7949a98914025}{Destroy\+All\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Clear all entities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1EntityManager_a001161084373b3dd4b36a69dad46237a}{enable\+\_\+entity}} (Entity\+Id e\+Id, bool v)
+\begin{DoxyCompactList}\small\item\em Enable an entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classfox_1_1EntityManager_ac77d8b6f752a1d85d89960f08dd15a0c}{is\+\_\+entity\+\_\+enable}} (Entity\+Id e\+Id)
+\begin{DoxyCompactList}\small\item\em Check if an entity is enbale or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1EntityManager_ad751039ccbaf6233259e88dc04bf8f4b}{Set\+Signature}} (Entity\+Id entity, const \mbox{\hyperlink{classbitset}{Comp\+Signature}} \&signature)
+\begin{DoxyCompactList}\small\item\em Set the Signature of the entity pass in parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbitset}{Comp\+Signature}} \& \mbox{\hyperlink{classfox_1_1EntityManager_ae39b16102cb003b27f0f316f17066394}{Get\+Signature}} (Entity\+Id entity)
+\begin{DoxyCompactList}\small\item\em Get the Signature of the entity pass in parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_a93ca0f3eb751be4116a1407de3c06d73}\label{classfox_1_1EntityManager_a93ca0f3eb751be4116a1407de3c06d73}} 
+std\+::queue$<$ Entity\+Id $>$ {\bfseries m\+Available\+Entities}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_ab482802c94c6e49bdba624ef9f57bbc7}\label{classfox_1_1EntityManager_ab482802c94c6e49bdba624ef9f57bbc7}} 
+std\+::unordered\+\_\+map$<$ Entity\+Id, \mbox{\hyperlink{classbitset}{Comp\+Signature}} $>$ {\bfseries m\+\_\+v\+Signatures}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_ae8ea01083085cd09495538b2bd7c69b8}\label{classfox_1_1EntityManager_ae8ea01083085cd09495538b2bd7c69b8}} 
+\mbox{\hyperlink{classDynamicArray}{Dynamic\+Array}}$<$ Entity\+Id $>$ {\bfseries m\+\_\+v\+Entity}
+\item 
+\mbox{\Hypertarget{classfox_1_1EntityManager_a30af94c7c3b51237c978c15f8dc337fc}\label{classfox_1_1EntityManager_a30af94c7c3b51237c978c15f8dc337fc}} 
+uint32\+\_\+t {\bfseries m\+Living\+Entity\+Count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1EntityManager_ae1b2479a981743a986d994518df37123}\label{classfox_1_1EntityManager_ae1b2479a981743a986d994518df37123}} 
+\index{fox::EntityManager@{fox::EntityManager}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily Entity\+Id fox\+::\+Entity\+Manager\+::\+Create\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create an \mbox{\hyperlink{classfox_1_1Entity}{Entity}}. 
+
+\begin{DoxyReturn}{Returns}
+Entity\+Id the id of the \mbox{\hyperlink{classfox_1_1Entity}{Entity}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1EntityManager_a9c0f4ebb9828fdd8e9add330274a7736}\label{classfox_1_1EntityManager_a9c0f4ebb9828fdd8e9add330274a7736}} 
+\index{fox::EntityManager@{fox::EntityManager}!DestroyEntity@{DestroyEntity}}
+\index{DestroyEntity@{DestroyEntity}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{DestroyEntity()}{DestroyEntity()}}
+{\footnotesize\ttfamily void fox\+::\+Entity\+Manager\+::\+Destroy\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the entity to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1EntityManager_a001161084373b3dd4b36a69dad46237a}\label{classfox_1_1EntityManager_a001161084373b3dd4b36a69dad46237a}} 
+\index{fox::EntityManager@{fox::EntityManager}!enable\_entity@{enable\_entity}}
+\index{enable\_entity@{enable\_entity}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{enable\_entity()}{enable\_entity()}}
+{\footnotesize\ttfamily void fox\+::\+Entity\+Manager\+::enable\+\_\+entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{e\+Id,  }\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\+Id} & the entity id \\
+\hline
+{\em v} & the enable value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1EntityManager_a71601e8d749050794c4a4ec1ed5e5cf1}\label{classfox_1_1EntityManager_a71601e8d749050794c4a4ec1ed5e5cf1}} 
+\index{fox::EntityManager@{fox::EntityManager}!ForEach@{ForEach}}
+\index{ForEach@{ForEach}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{ForEach()}{ForEach()}}
+{\footnotesize\ttfamily void fox\+::\+Entity\+Manager\+::\+For\+Each (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(Entity\+Id)$>$}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Perform a foreach in all entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & the function called, if it\textquotesingle{}s return true the loop continue otherwise it\textquotesingle{}s break \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1EntityManager_ae39b16102cb003b27f0f316f17066394}\label{classfox_1_1EntityManager_ae39b16102cb003b27f0f316f17066394}} 
+\index{fox::EntityManager@{fox::EntityManager}!GetSignature@{GetSignature}}
+\index{GetSignature@{GetSignature}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{GetSignature()}{GetSignature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbitset}{Comp\+Signature}}\& fox\+::\+Entity\+Manager\+::\+Get\+Signature (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Signature of the entity pass in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Comp\+Signature\& a reference to the signature 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1EntityManager_ac77d8b6f752a1d85d89960f08dd15a0c}\label{classfox_1_1EntityManager_ac77d8b6f752a1d85d89960f08dd15a0c}} 
+\index{fox::EntityManager@{fox::EntityManager}!is\_entity\_enable@{is\_entity\_enable}}
+\index{is\_entity\_enable@{is\_entity\_enable}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{is\_entity\_enable()}{is\_entity\_enable()}}
+{\footnotesize\ttfamily bool fox\+::\+Entity\+Manager\+::is\+\_\+entity\+\_\+enable (\begin{DoxyParamCaption}\item[{Entity\+Id}]{e\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if an entity is enbale or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\+Id} & the entity id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if entity is enable otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1EntityManager_ad751039ccbaf6233259e88dc04bf8f4b}\label{classfox_1_1EntityManager_ad751039ccbaf6233259e88dc04bf8f4b}} 
+\index{fox::EntityManager@{fox::EntityManager}!SetSignature@{SetSignature}}
+\index{SetSignature@{SetSignature}!fox::EntityManager@{fox::EntityManager}}
+\doxysubsubsection{\texorpdfstring{SetSignature()}{SetSignature()}}
+{\footnotesize\ttfamily void fox\+::\+Entity\+Manager\+::\+Set\+Signature (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity,  }\item[{const \mbox{\hyperlink{classbitset}{Comp\+Signature}} \&}]{signature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the Signature of the entity pass in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity \\
+\hline
+{\em signature} & the signature to add in the entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/Entity\+Manager.\+hpp\end{DoxyCompactItemize}

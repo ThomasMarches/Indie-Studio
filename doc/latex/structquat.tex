@@ -1,0 +1,151 @@
+\hypertarget{structquat}{}\doxysection{quat Struct Reference}
+\label{structquat}\index{quat@{quat}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquat_a13d13a2a61159e91e1590aded3c11792}\label{structquat_a13d13a2a61159e91e1590aded3c11792}} 
+{\bfseries quat} (float \+\_\+x, float \+\_\+y, float \+\_\+z, float \+\_\+w)
+\item 
+\mbox{\Hypertarget{structquat_a333581545995602f75bd703157e23f86}\label{structquat_a333581545995602f75bd703157e23f86}} 
+\mbox{\hyperlink{structquat}{quat}} {\bfseries operator-\/} () const
+\item 
+\mbox{\Hypertarget{structquat_a468613776f000bd617f8a423a4a3c098}\label{structquat_a468613776f000bd617f8a423a4a3c098}} 
+void {\bfseries operator+=} (const \mbox{\hyperlink{structquat}{quat}} \&q)
+\item 
+\mbox{\Hypertarget{structquat_ae71a76f4cdaa3d3fc71b7b5c3609add6}\label{structquat_ae71a76f4cdaa3d3fc71b7b5c3609add6}} 
+void {\bfseries operator-\/=} (const \mbox{\hyperlink{structquat}{quat}} \&q)
+\item 
+\mbox{\Hypertarget{structquat_a093a7b417c90c968e4611543fa1d7f12}\label{structquat_a093a7b417c90c968e4611543fa1d7f12}} 
+void {\bfseries operator$\ast$=} (float a)
+\item 
+\mbox{\hyperlink{structVec3}{Vec3}} \mbox{\hyperlink{structquat_a9bad2eb601499dcee3c0bfe2df6ce391}{get\+Axis}} ()
+\begin{DoxyCompactList}\small\item\em Get the axis of the Quaternion. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structquat_ad84ff1386a6fa06495027914f376a264}{Get\+Angle}} () const
+\begin{DoxyCompactList}\small\item\em Get the angle of the Quaternion. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structquat_af77a2b121904992e4faf80b12f4c0dfe}{Length\+Square}} () const
+\begin{DoxyCompactList}\small\item\em Get the length square. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structquat_a6cb14d84cd91d00817b476d5c3167538}{Length}} () const
+\begin{DoxyCompactList}\small\item\em Get the length. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structquat_a73a931b4007d4c558c5d7d246913eba0}\label{structquat_a73a931b4007d4c558c5d7d246913eba0}} 
+void \mbox{\hyperlink{structquat_a73a931b4007d4c558c5d7d246913eba0}{normalize}} ()
+\begin{DoxyCompactList}\small\item\em Normalize the Quaternion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structquat}{quat}} \mbox{\hyperlink{structquat_ac79268185bfac3bf4aa4fdbf726c7193}{normalized}} () const
+\begin{DoxyCompactList}\small\item\em Get the normalized value from this Quaternion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structquat}{quat}} \mbox{\hyperlink{structquat_acb0e2e50d9d0866a7c343841acd41ea2}{conjugate}} () const
+\begin{DoxyCompactList}\small\item\em Get the conjugate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structquat}{quat}} \mbox{\hyperlink{structquat_a0a5ebc7d7713dddc630483dddf65cb23}{inverse}} () const
+\begin{DoxyCompactList}\small\item\em Get the invert. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structquat_a7f9435a493b7a2070ea56faf5c753a77}\label{structquat_a7f9435a493b7a2070ea56faf5c753a77}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{structquat_aaf03f77841a8f0523047aea5e3f790b9}\label{structquat_aaf03f77841a8f0523047aea5e3f790b9}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{structquat_a71663e129648de6af236fef941e0f070}\label{structquat_a71663e129648de6af236fef941e0f070}} 
+float {\bfseries z}
+\item 
+\mbox{\Hypertarget{structquat_a263f2c95275a2e1965b9cb22b3fb9dfa}\label{structquat_a263f2c95275a2e1965b9cb22b3fb9dfa}} 
+float {\bfseries w}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structquat_acb0e2e50d9d0866a7c343841acd41ea2}\label{structquat_acb0e2e50d9d0866a7c343841acd41ea2}} 
+\index{quat@{quat}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{conjugate()}{conjugate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structquat}{quat}} quat\+::conjugate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the conjugate. 
+
+\begin{DoxyReturn}{Returns}
+the conjugate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_ad84ff1386a6fa06495027914f376a264}\label{structquat_ad84ff1386a6fa06495027914f376a264}} 
+\index{quat@{quat}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{GetAngle()}{GetAngle()}}
+{\footnotesize\ttfamily float quat\+::\+Get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the angle of the Quaternion. 
+
+\begin{DoxyReturn}{Returns}
+the angle of the Quaternion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_a9bad2eb601499dcee3c0bfe2df6ce391}\label{structquat_a9bad2eb601499dcee3c0bfe2df6ce391}} 
+\index{quat@{quat}!getAxis@{getAxis}}
+\index{getAxis@{getAxis}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{getAxis()}{getAxis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVec3}{Vec3}} quat\+::get\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the axis of the Quaternion. 
+
+\begin{DoxyReturn}{Returns}
+the axis of the Quaternion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_a0a5ebc7d7713dddc630483dddf65cb23}\label{structquat_a0a5ebc7d7713dddc630483dddf65cb23}} 
+\index{quat@{quat}!inverse@{inverse}}
+\index{inverse@{inverse}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structquat}{quat}} quat\+::inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the invert. 
+
+\begin{DoxyReturn}{Returns}
+the invert 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_a6cb14d84cd91d00817b476d5c3167538}\label{structquat_a6cb14d84cd91d00817b476d5c3167538}} 
+\index{quat@{quat}!Length@{Length}}
+\index{Length@{Length}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily float quat\+::\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the length. 
+
+\begin{DoxyReturn}{Returns}
+the length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_af77a2b121904992e4faf80b12f4c0dfe}\label{structquat_af77a2b121904992e4faf80b12f4c0dfe}} 
+\index{quat@{quat}!LengthSquare@{LengthSquare}}
+\index{LengthSquare@{LengthSquare}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{LengthSquare()}{LengthSquare()}}
+{\footnotesize\ttfamily float quat\+::\+Length\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the length square. 
+
+\begin{DoxyReturn}{Returns}
+the length square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structquat_ac79268185bfac3bf4aa4fdbf726c7193}\label{structquat_ac79268185bfac3bf4aa4fdbf726c7193}} 
+\index{quat@{quat}!normalized@{normalized}}
+\index{normalized@{normalized}!quat@{quat}}
+\doxysubsubsection{\texorpdfstring{normalized()}{normalized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structquat}{quat}} quat\+::normalized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the normalized value from this Quaternion. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Utils/Quat.\+hpp\end{DoxyCompactItemize}

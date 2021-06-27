@@ -1,0 +1,70 @@
+\hypertarget{classfox_1_1Health}{}\doxysection{fox\+::Health Class Reference}
+\label{classfox_1_1Health}\index{fox::Health@{fox::Health}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Health_abf1cc1b4d6bba7c88ecaa1663fdce7d9}\label{classfox_1_1Health_abf1cc1b4d6bba7c88ecaa1663fdce7d9}} 
+\mbox{\hyperlink{classfox_1_1Health_abf1cc1b4d6bba7c88ecaa1663fdce7d9}{Health}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Health_a7f0110da31e5e5fc3ac41c64339577fa}{take\+\_\+damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Decrease the health with the damage value pass in parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Health_a3ada1b5d923500caf36ecf28bfd5c5e4}\label{classfox_1_1Health_a3ada1b5d923500caf36ecf28bfd5c5e4}} 
+void \mbox{\hyperlink{classfox_1_1Health_a3ada1b5d923500caf36ecf28bfd5c5e4}{died}} ()
+\begin{DoxyCompactList}\small\item\em Notify that the entity died. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Health_a27787c2dfe3126aebca34edf13525606}{subscribe\+\_\+died}} (std\+::function$<$ void()$>$ cb)
+\begin{DoxyCompactList}\small\item\em Register a function to be called when it died. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Health_a1b17046d29871ed95673f65481dd6ce9}{subscribe\+\_\+take\+\_\+damage}} (std\+::function$<$ void()$>$ cb)
+\begin{DoxyCompactList}\small\item\em Register a function to be called when it take damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Health_a27787c2dfe3126aebca34edf13525606}\label{classfox_1_1Health_a27787c2dfe3126aebca34edf13525606}} 
+\index{fox::Health@{fox::Health}!subscribe\_died@{subscribe\_died}}
+\index{subscribe\_died@{subscribe\_died}!fox::Health@{fox::Health}}
+\doxysubsubsection{\texorpdfstring{subscribe\_died()}{subscribe\_died()}}
+{\footnotesize\ttfamily void fox\+::\+Health\+::subscribe\+\_\+died (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register a function to be called when it died. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cb} & the function to register \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Health_a1b17046d29871ed95673f65481dd6ce9}\label{classfox_1_1Health_a1b17046d29871ed95673f65481dd6ce9}} 
+\index{fox::Health@{fox::Health}!subscribe\_take\_damage@{subscribe\_take\_damage}}
+\index{subscribe\_take\_damage@{subscribe\_take\_damage}!fox::Health@{fox::Health}}
+\doxysubsubsection{\texorpdfstring{subscribe\_take\_damage()}{subscribe\_take\_damage()}}
+{\footnotesize\ttfamily void fox\+::\+Health\+::subscribe\+\_\+take\+\_\+damage (\begin{DoxyParamCaption}\item[{std\+::function$<$ void()$>$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register a function to be called when it take damage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cb} & the function to register \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Health_a7f0110da31e5e5fc3ac41c64339577fa}\label{classfox_1_1Health_a7f0110da31e5e5fc3ac41c64339577fa}} 
+\index{fox::Health@{fox::Health}!take\_damage@{take\_damage}}
+\index{take\_damage@{take\_damage}!fox::Health@{fox::Health}}
+\doxysubsubsection{\texorpdfstring{take\_damage()}{take\_damage()}}
+{\footnotesize\ttfamily void fox\+::\+Health\+::take\+\_\+damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decrease the health with the damage value pass in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & the value to decrease \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Health.\+hpp\end{DoxyCompactItemize}

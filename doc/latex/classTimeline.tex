@@ -1,0 +1,161 @@
+\hypertarget{classTimeline}{}\doxysection{Timeline Class Reference}
+\label{classTimeline}\index{Timeline@{Timeline}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTimeline_aea7c452404a99533f9dd0df170748d4b}\label{classTimeline_aea7c452404a99533f9dd0df170748d4b}} 
+\mbox{\hyperlink{classTimeline_aea7c452404a99533f9dd0df170748d4b}{Timeline}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTimeline_a1c4235be38facf657c8d08f99c9d9ee4}{Timeline}} (bool \mbox{\hyperlink{classTimeline_afa24dbd300d1835382f5212f70188afb}{loop}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimeline_a80b46c375e389fdf0bfe96b45de6f31b}\label{classTimeline_a80b46c375e389fdf0bfe96b45de6f31b}} 
+\mbox{\hyperlink{classTimeline_a80b46c375e389fdf0bfe96b45de6f31b}{$\sim$\+Timeline}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimeline_aa09348b485389be06f9c6dd6354568ca}\label{classTimeline_aa09348b485389be06f9c6dd6354568ca}} 
+\mbox{\hyperlink{classTimeline_aa09348b485389be06f9c6dd6354568ca}{Timeline}} (\mbox{\hyperlink{classTimeline}{Timeline}} \&\&other)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimeline_a11bbbc28e50d5095ba3cc9eadcbd0516}\label{classTimeline_a11bbbc28e50d5095ba3cc9eadcbd0516}} 
+\mbox{\hyperlink{classTimeline}{Timeline}} \& {\bfseries operator=} (\mbox{\hyperlink{classTimeline}{Timeline}} \&\&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTimeline_a40adced5300c3db937b39311972bb8cb}{add}} (Easing e)
+\begin{DoxyCompactList}\small\item\em Add a new track. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTimeline_a0f547b9dec8cf8d118ffb62becae62c2}{add}} ()
+\begin{DoxyCompactList}\small\item\em Add a new track. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTimeline}{Timeline}} \& \mbox{\hyperlink{classTimeline_afa24dbd300d1835382f5212f70188afb}{loop}} (bool v)
+\begin{DoxyCompactList}\small\item\em Allow the timeline to loop or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTimeline}{Timeline}} \& \mbox{\hyperlink{classTimeline_a1c591f0580b687921836139ed3d4b601}{signal}} (float time, std\+::function$<$ void()$>$ cb)
+\begin{DoxyCompactList}\small\item\em Add a callback function to be called when the time execution equal to the time given in parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimeline_aacf04c5c89735d933e4b14f6a530675c}\label{classTimeline_aacf04c5c89735d933e4b14f6a530675c}} 
+void \mbox{\hyperlink{classTimeline_aacf04c5c89735d933e4b14f6a530675c}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the time of the timeline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimeline_a2db242483eaef89e0247d549c8ac1a8b}\label{classTimeline_a2db242483eaef89e0247d549c8ac1a8b}} 
+void \mbox{\hyperlink{classTimeline_a2db242483eaef89e0247d549c8ac1a8b}{run}} ()
+\begin{DoxyCompactList}\small\item\em Run the animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTimeline_a9ad47a1b231378f4034ba96cf27b48dc}\label{classTimeline_a9ad47a1b231378f4034ba96cf27b48dc}} 
+std\+::unordered\+\_\+map$<$ float, std\+::function$<$ void()$>$ $>$ {\bfseries m\+\_\+\+Signals}
+\item 
+\mbox{\Hypertarget{classTimeline_a1fafaed783f1d44142312989a86dbc06}\label{classTimeline_a1fafaed783f1d44142312989a86dbc06}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classITrack}{I\+Track}} $>$ $>$ {\bfseries m\+\_\+v\+Tracks}
+\item 
+\mbox{\Hypertarget{classTimeline_a214c8b3d249629d875c91a1a97bdc7a4}\label{classTimeline_a214c8b3d249629d875c91a1a97bdc7a4}} 
+bool {\bfseries m\+\_\+b\+Loop}
+\item 
+\mbox{\Hypertarget{classTimeline_a83272e5df185054209771a24defb030e}\label{classTimeline_a83272e5df185054209771a24defb030e}} 
+float {\bfseries m\+\_\+f\+Time} = 0
+\item 
+\mbox{\Hypertarget{classTimeline_add9244366e0d898e923fe6ee73e554c2}\label{classTimeline_add9244366e0d898e923fe6ee73e554c2}} 
+float {\bfseries m\+\_\+f\+Signal\+Time} = 0
+\item 
+\mbox{\Hypertarget{classTimeline_a15e26388bd587dc449b3685691b4c6ca}\label{classTimeline_a15e26388bd587dc449b3685691b4c6ca}} 
+float {\bfseries m\+\_\+f\+End\+Time} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTimeline_a1c4235be38facf657c8d08f99c9d9ee4}\label{classTimeline_a1c4235be38facf657c8d08f99c9d9ee4}} 
+\index{Timeline@{Timeline}!Timeline@{Timeline}}
+\index{Timeline@{Timeline}!Timeline@{Timeline}}
+\doxysubsubsection{\texorpdfstring{Timeline()}{Timeline()}}
+{\footnotesize\ttfamily Timeline\+::\+Timeline (\begin{DoxyParamCaption}\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loop} & set to true if the timeline need to loop \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTimeline_a0f547b9dec8cf8d118ffb62becae62c2}\label{classTimeline_a0f547b9dec8cf8d118ffb62becae62c2}} 
+\index{Timeline@{Timeline}!add@{add}}
+\index{add@{add}!Timeline@{Timeline}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& Timeline\+::add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new track. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the value to modified during the timeline execution \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+the new created \mbox{\hyperlink{classTrack}{Track}} class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTimeline_a40adced5300c3db937b39311972bb8cb}\label{classTimeline_a40adced5300c3db937b39311972bb8cb}} 
+\index{Timeline@{Timeline}!add@{add}}
+\index{add@{add}!Timeline@{Timeline}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& Timeline\+::add (\begin{DoxyParamCaption}\item[{Easing}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new track. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the value to modified during the timeline execution \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the type of interpolation to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new created \mbox{\hyperlink{classTrack}{Track}} class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTimeline_afa24dbd300d1835382f5212f70188afb}\label{classTimeline_afa24dbd300d1835382f5212f70188afb}} 
+\index{Timeline@{Timeline}!loop@{loop}}
+\index{loop@{loop}!Timeline@{Timeline}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTimeline}{Timeline}}\& Timeline\+::loop (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Allow the timeline to loop or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & set to true if the timeline need to loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTimeline_a1c591f0580b687921836139ed3d4b601}\label{classTimeline_a1c591f0580b687921836139ed3d4b601}} 
+\index{Timeline@{Timeline}!signal@{signal}}
+\index{signal@{signal}!Timeline@{Timeline}}
+\doxysubsubsection{\texorpdfstring{signal()}{signal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTimeline}{Timeline}}\& Timeline\+::signal (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{std\+::function$<$ void()$>$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a callback function to be called when the time execution equal to the time given in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time of when the signal need to be trigger \\
+\hline
+{\em cb} & the signal function callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Timeline.\+hpp\end{DoxyCompactItemize}

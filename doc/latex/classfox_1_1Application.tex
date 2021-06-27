@@ -1,0 +1,391 @@
+\hypertarget{classfox_1_1Application}{}\doxysection{fox\+::Application Class Reference}
+\label{classfox_1_1Application}\index{fox::Application@{fox::Application}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfox_1_1Application_a12bd242626f7f32c5b4c81cf2e9bf287}{Application}} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em Contructor of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Application_aec9d2365496ee82e639865c2e6325b37}\label{classfox_1_1Application_aec9d2365496ee82e639865c2e6325b37}} 
+virtual void \mbox{\hyperlink{classfox_1_1Application_aec9d2365496ee82e639865c2e6325b37}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Application_a03cb6e1d3108515dcb1e5a41ee311f79}\label{classfox_1_1Application_a03cb6e1d3108515dcb1e5a41ee311f79}} 
+void \mbox{\hyperlink{classfox_1_1Application_a03cb6e1d3108515dcb1e5a41ee311f79}{run}} ()
+\begin{DoxyCompactList}\small\item\em Run the application. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1Application_aec7fe733e5a250ec8a10953b54db303e}\label{classfox_1_1Application_aec7fe733e5a250ec8a10953b54db303e}} 
+void \mbox{\hyperlink{classfox_1_1Application_aec7fe733e5a250ec8a10953b54db303e}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Q\+Ui the application. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classfox_1_1Application_a9683411831fed4167bddcc330dcdd6a0}{add\+\_\+manager}} (\mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}} $\ast$p\+Asset\+Manager) noexcept
+\begin{DoxyCompactList}\small\item\em Add a new \mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classfox_1_1Application_a9e69877f6a43617349f3b78c3ca6f1b0}{add\+\_\+asset}} (const std\+::string \&str\+Asset\+Path) noexcept
+\begin{DoxyCompactList}\small\item\em Add a new Asset. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Asset $>$ }\\T\+Asset $\ast$ \mbox{\hyperlink{classfox_1_1Application_ad12dcb9241b271009a3643950c56e056}{get\+\_\+asset}} (const std\+::string \&str\+Asset\+Path)
+\begin{DoxyCompactList}\small\item\em Get the asset match with the path given in parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Asset $>$ }\\bool \mbox{\hyperlink{classfox_1_1Application_ae6f2d139848baf08a798d1f626c9d2a9}{remove\+\_\+asset}} (const std\+::string \&str\+Asset\+Path) noexcept
+\begin{DoxyCompactList}\small\item\em Remove a asset to it manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1ResourceManager}{Resource\+Manager}} \& \mbox{\hyperlink{classfox_1_1Application_a4bff14dfd52bfa927e04449cd334c5c5}{get\+\_\+resource\+\_\+manager}} () const
+\begin{DoxyCompactList}\small\item\em Get the resource manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSaveManager}{Save\+Manager}} \& \mbox{\hyperlink{classfox_1_1Application_a696d0d3c390437bd391df5e49d29fafe}{get\+\_\+save\+\_\+manager}} () const
+\begin{DoxyCompactList}\small\item\em Get the save manager. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of$<$ Scene, T $>$\+::value, bool $>$  = true$>$ }\\void \mbox{\hyperlink{classfox_1_1Application_a411354a11c7835edf81eccd1547c4f89}{add\+\_\+scene}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Add a new scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_a6acbf2855f582ea2f0bb948ee650578f}{remove\+\_\+scene}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Remove a scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_aa73f0e4776c7a8eca8a40a9b88523de4}{switch\+\_\+to}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Transitions to scene with specified name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Scene}{Scene}} $\ast$ \mbox{\hyperlink{classfox_1_1Application_a027d2ca1002fdcf807aa966d8627da72}{get\+\_\+active}} ()
+\begin{DoxyCompactList}\small\item\em Get the current scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_a866895b66e440aa6c5fab0e28a64bf19}{Create\+Group}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Add a new @\+Audio\+Group. \end{DoxyCompactList}\item 
+Audio\+Group \& \mbox{\hyperlink{classfox_1_1Application_a106f4d669581f35d3d19e8212af12705}{get\+Group}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get the audio group using the name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_a78c61340fcfbcbc176eb0e9d65cd8274}{Play\+Sound}} (const std\+::string \&group, const std\+::string \&asset, float volume=1, float pitch=1)
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_aae1ac21b3e99e64258eef639634568d6}{Play\+Music}} (const std\+::string \&group, const std\+::string \&asset, float volume=1, float pitch=1)
+\begin{DoxyCompactList}\small\item\em Play a music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1Application_a7068cba8c4c44a10d4d707604b819ee6}{Stop\+Sound}} (const std\+::string \&asset)
+\begin{DoxyCompactList}\small\item\em Stop a sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1PlayerManager}{Player\+Manager}} \& \mbox{\hyperlink{classfox_1_1Application_a9ad3cb72bc4f26c2302da74b691a4094}{get\+\_\+player\+\_\+manager}} () const
+\begin{DoxyCompactList}\small\item\em Get the Player Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_ad8886d9ed262361e219bb4855a3ec14e}\label{classfox_1_1Application_ad8886d9ed262361e219bb4855a3ec14e}} 
+bool {\bfseries m\+\_\+b\+Is\+Running}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_ae497d8e5cd8ca6bb4d358bad35d923b3}\label{classfox_1_1Application_ae497d8e5cd8ca6bb4d358bad35d923b3}} 
+scope$<$ \mbox{\hyperlink{classfox_1_1ResourceManager}{Resource\+Manager}} $>$ {\bfseries m\+\_\+p\+Resource\+Manager}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_a24ab5a11de84a0a1aeefbcffd25696fa}\label{classfox_1_1Application_a24ab5a11de84a0a1aeefbcffd25696fa}} 
+scope$<$ \mbox{\hyperlink{classfox_1_1SceneManager}{Scene\+Manager}} $>$ {\bfseries m\+\_\+p\+Scene\+Manager}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_ae2e0c4065ed40025015e57205164b08e}\label{classfox_1_1Application_ae2e0c4065ed40025015e57205164b08e}} 
+scope$<$ Audio\+Manager $>$ {\bfseries m\+\_\+p\+Audio\+Manager}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_a10e54168427e5183c5a002c285493f07}\label{classfox_1_1Application_a10e54168427e5183c5a002c285493f07}} 
+scope$<$ \mbox{\hyperlink{classfox_1_1PlayerManager}{Player\+Manager}} $>$ {\bfseries m\+\_\+p\+Player\+Manager}
+\item 
+\mbox{\Hypertarget{classfox_1_1Application_ac414420164d297433bf42cadf9dbff86}\label{classfox_1_1Application_ac414420164d297433bf42cadf9dbff86}} 
+scope$<$ \mbox{\hyperlink{classSaveManager}{Save\+Manager}} $>$ {\bfseries m\+\_\+p\+Save\+Manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfox_1_1Application_a12bd242626f7f32c5b4c81cf2e9bf287}\label{classfox_1_1Application_a12bd242626f7f32c5b4c81cf2e9bf287}} 
+\index{fox::Application@{fox::Application}!Application@{Application}}
+\index{Application@{Application}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily fox\+::\+Application\+::\+Application (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+Contructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & arguments count \\
+\hline
+{\em av} & arguments \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1Application_a9e69877f6a43617349f3b78c3ca6f1b0}\label{classfox_1_1Application_a9e69877f6a43617349f3b78c3ca6f1b0}} 
+\index{fox::Application@{fox::Application}!add\_asset@{add\_asset}}
+\index{add\_asset@{add\_asset}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{add\_asset()}{add\_asset()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fox\+::\+Application\+::add\+\_\+asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Add a new Asset. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset (use to identify the asset like a Unique ID) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the asset is successfully added or false if the asset have been register twice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a9683411831fed4167bddcc330dcdd6a0}\label{classfox_1_1Application_a9683411831fed4167bddcc330dcdd6a0}} 
+\index{fox::Application@{fox::Application}!add\_manager@{add\_manager}}
+\index{add\_manager@{add\_manager}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{add\_manager()}{add\_manager()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fox\+::\+Application\+::add\+\_\+manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}} $\ast$}]{p\+Asset\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Add a new \mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the Asset (use to identify the manager) \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Asset\+Manager} & the manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the manager is successfully added or false if the manager have been register twice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a411354a11c7835edf81eccd1547c4f89}\label{classfox_1_1Application_a411354a11c7835edf81eccd1547c4f89}} 
+\index{fox::Application@{fox::Application}!add\_scene@{add\_scene}}
+\index{add\_scene@{add\_scene}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{add\_scene()}{add\_scene()}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+base\+\_\+of$<$ Scene, T $>$\+::value, bool $>$  = true$>$ \\
+void fox\+::\+Application\+::add\+\_\+scene (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new scene. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the class of the scene \\
+\hline
+{\em Args} & the constructor arguments types \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the constructor arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_a866895b66e440aa6c5fab0e28a64bf19}\label{classfox_1_1Application_a866895b66e440aa6c5fab0e28a64bf19}} 
+\index{fox::Application@{fox::Application}!CreateGroup@{CreateGroup}}
+\index{CreateGroup@{CreateGroup}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{CreateGroup()}{CreateGroup()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::\+Create\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Add a new @\+Audio\+Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the new audio group \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_a027d2ca1002fdcf807aa966d8627da72}\label{classfox_1_1Application_a027d2ca1002fdcf807aa966d8627da72}} 
+\index{fox::Application@{fox::Application}!get\_active@{get\_active}}
+\index{get\_active@{get\_active}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{get\_active()}{get\_active()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Scene}{Scene}}$\ast$ fox\+::\+Application\+::get\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current scene. 
+
+\begin{DoxyReturn}{Returns}
+the current scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_ad12dcb9241b271009a3643950c56e056}\label{classfox_1_1Application_ad12dcb9241b271009a3643950c56e056}} 
+\index{fox::Application@{fox::Application}!get\_asset@{get\_asset}}
+\index{get\_asset@{get\_asset}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{get\_asset()}{get\_asset()}}
+{\footnotesize\ttfamily template$<$typename T\+Asset $>$ \\
+T\+Asset$\ast$ fox\+::\+Application\+::get\+\_\+asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the asset match with the path given in parameter. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Asset} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the asset if it\textquotesingle{}s exist otherwise it return nullptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a9ad3cb72bc4f26c2302da74b691a4094}\label{classfox_1_1Application_a9ad3cb72bc4f26c2302da74b691a4094}} 
+\index{fox::Application@{fox::Application}!get\_player\_manager@{get\_player\_manager}}
+\index{get\_player\_manager@{get\_player\_manager}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{get\_player\_manager()}{get\_player\_manager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1PlayerManager}{Player\+Manager}}\& fox\+::\+Application\+::get\+\_\+player\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Player Manager. 
+
+\begin{DoxyReturn}{Returns}
+the ref of the Player Manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a4bff14dfd52bfa927e04449cd334c5c5}\label{classfox_1_1Application_a4bff14dfd52bfa927e04449cd334c5c5}} 
+\index{fox::Application@{fox::Application}!get\_resource\_manager@{get\_resource\_manager}}
+\index{get\_resource\_manager@{get\_resource\_manager}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_manager()}{get\_resource\_manager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1ResourceManager}{Resource\+Manager}}\& fox\+::\+Application\+::get\+\_\+resource\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the resource manager. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the resource manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a696d0d3c390437bd391df5e49d29fafe}\label{classfox_1_1Application_a696d0d3c390437bd391df5e49d29fafe}} 
+\index{fox::Application@{fox::Application}!get\_save\_manager@{get\_save\_manager}}
+\index{get\_save\_manager@{get\_save\_manager}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{get\_save\_manager()}{get\_save\_manager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSaveManager}{Save\+Manager}}\& fox\+::\+Application\+::get\+\_\+save\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the save manager. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the save manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a106f4d669581f35d3d19e8212af12705}\label{classfox_1_1Application_a106f4d669581f35d3d19e8212af12705}} 
+\index{fox::Application@{fox::Application}!getGroup@{getGroup}}
+\index{getGroup@{getGroup}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{getGroup()}{getGroup()}}
+{\footnotesize\ttfamily Audio\+Group\& fox\+::\+Application\+::get\+Group (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Get the audio group using the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to be search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to the audio group or throw an exception if not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_aae1ac21b3e99e64258eef639634568d6}\label{classfox_1_1Application_aae1ac21b3e99e64258eef639634568d6}} 
+\index{fox::Application@{fox::Application}!PlayMusic@{PlayMusic}}
+\index{PlayMusic@{PlayMusic}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{PlayMusic()}{PlayMusic()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::\+Play\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group,  }\item[{const std\+::string \&}]{asset,  }\item[{float}]{volume = {\ttfamily 1},  }\item[{float}]{pitch = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Play a music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the name of the group \\
+\hline
+{\em asset} & the path to the sound file \\
+\hline
+{\em volume} & the value of the volume between 0 and 1 \\
+\hline
+{\em pitch} & the value of the pitch between 0 and 1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_a78c61340fcfbcbc176eb0e9d65cd8274}\label{classfox_1_1Application_a78c61340fcfbcbc176eb0e9d65cd8274}} 
+\index{fox::Application@{fox::Application}!PlaySound@{PlaySound}}
+\index{PlaySound@{PlaySound}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{PlaySound()}{PlaySound()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::\+Play\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group,  }\item[{const std\+::string \&}]{asset,  }\item[{float}]{volume = {\ttfamily 1},  }\item[{float}]{pitch = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Play a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the name of the group \\
+\hline
+{\em asset} & the path to the sound file \\
+\hline
+{\em volume} & the value of the volume between 0 and 1 \\
+\hline
+{\em pitch} & the value of the pitch between 0 and 1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_ae6f2d139848baf08a798d1f626c9d2a9}\label{classfox_1_1Application_ae6f2d139848baf08a798d1f626c9d2a9}} 
+\index{fox::Application@{fox::Application}!remove\_asset@{remove\_asset}}
+\index{remove\_asset@{remove\_asset}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{remove\_asset()}{remove\_asset()}}
+{\footnotesize\ttfamily template$<$typename T\+Asset $>$ \\
+bool fox\+::\+Application\+::remove\+\_\+asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Remove a asset to it manager. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Asset} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the asset is successfully removed or otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1Application_a6acbf2855f582ea2f0bb948ee650578f}\label{classfox_1_1Application_a6acbf2855f582ea2f0bb948ee650578f}} 
+\index{fox::Application@{fox::Application}!remove\_scene@{remove\_scene}}
+\index{remove\_scene@{remove\_scene}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{remove\_scene()}{remove\_scene()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::remove\+\_\+scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Remove a scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the scene to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_a7068cba8c4c44a10d4d707604b819ee6}\label{classfox_1_1Application_a7068cba8c4c44a10d4d707604b819ee6}} 
+\index{fox::Application@{fox::Application}!StopSound@{StopSound}}
+\index{StopSound@{StopSound}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{StopSound()}{StopSound()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::\+Stop\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{asset }\end{DoxyParamCaption})}
+
+
+
+Stop a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asset} & the path to the sound file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1Application_aa73f0e4776c7a8eca8a40a9b88523de4}\label{classfox_1_1Application_aa73f0e4776c7a8eca8a40a9b88523de4}} 
+\index{fox::Application@{fox::Application}!switch\_to@{switch\_to}}
+\index{switch\_to@{switch\_to}!fox::Application@{fox::Application}}
+\doxysubsubsection{\texorpdfstring{switch\_to()}{switch\_to()}}
+{\footnotesize\ttfamily void fox\+::\+Application\+::switch\+\_\+to (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Transitions to scene with specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the new scene \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Application.\+hpp\end{DoxyCompactItemize}

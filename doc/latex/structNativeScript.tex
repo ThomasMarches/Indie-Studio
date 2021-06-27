@@ -1,0 +1,123 @@
+\hypertarget{structNativeScript}{}\doxysection{Native\+Script Struct Reference}
+\label{structNativeScript}\index{NativeScript@{NativeScript}}
+
+
+Collaboration diagram for Native\+Script\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNativeScript_a3227ec23b769256625247b5905f67c92}\label{structNativeScript_a3227ec23b769256625247b5905f67c92}} 
+\mbox{\hyperlink{structNativeScript_a3227ec23b769256625247b5905f67c92}{Native\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{structNativeScript_a659bb0f05dfc2e45feda37ee07325c12}{bind}} ()
+\begin{DoxyCompactList}\small\item\em Bind a \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\void \mbox{\hyperlink{structNativeScript_af09deff6392b8dd3dcc06380552d8928}{bind}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Bind a \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{structNativeScript_a2a8ff29dd946b31240b2186796d26af2}{is}} ()
+\begin{DoxyCompactList}\small\item\em Check if this script is the same type as T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{structNativeScript_af91aef7d42cf760b37da9eeee02c6340}{get}} ()
+\begin{DoxyCompactList}\small\item\em Get the script object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNativeScript_a00ed5490a4b6f2851baa51c2b194d165}\label{structNativeScript_a00ed5490a4b6f2851baa51c2b194d165}} 
+\mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} $\ast$ {\bfseries m\+\_\+p\+Instance} = nullptr
+\item 
+\mbox{\Hypertarget{structNativeScript_ab85c42a5514d9c773e446d5deffccbfd}\label{structNativeScript_ab85c42a5514d9c773e446d5deffccbfd}} 
+std\+::function$<$ \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} $\ast$()$>$ {\bfseries Instantiate\+Script}
+\item 
+\mbox{\Hypertarget{structNativeScript_ac34e303079ce0a353dbd8568767ee159}\label{structNativeScript_ac34e303079ce0a353dbd8568767ee159}} 
+void($\ast$ {\bfseries Destroy\+Script} )(\mbox{\hyperlink{structNativeScript}{Native\+Script}} $\ast$) = nullptr
+\item 
+\mbox{\Hypertarget{structNativeScript_aae6689391cd9f619133369f7adb9e089}\label{structNativeScript_aae6689391cd9f619133369f7adb9e089}} 
+Entity\+Id {\bfseries m\+\_\+\+Id}
+\item 
+\mbox{\Hypertarget{structNativeScript_a698d28b06c0f955d7322bc407291f7ff}\label{structNativeScript_a698d28b06c0f955d7322bc407291f7ff}} 
+\mbox{\hyperlink{classfox_1_1World}{fox\+::\+World}} $\ast$ {\bfseries m\+\_\+p\+World}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structNativeScript_a659bb0f05dfc2e45feda37ee07325c12}\label{structNativeScript_a659bb0f05dfc2e45feda37ee07325c12}} 
+\index{NativeScript@{NativeScript}!bind@{bind}}
+\index{bind@{bind}!NativeScript@{NativeScript}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Native\+Script\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Bind a \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{structNativeScript_af09deff6392b8dd3dcc06380552d8928}\label{structNativeScript_af09deff6392b8dd3dcc06380552d8928}} 
+\index{NativeScript@{NativeScript}!bind@{bind}}
+\index{bind@{bind}!NativeScript@{NativeScript}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+void Native\+Script\+::bind (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Bind a \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} \\
+\hline
+{\em Args} & the arguments types for the constructor of the \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the arguments for the constructor of the \mbox{\hyperlink{classScriptableBehaviour}{Scriptable\+Behaviour}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structNativeScript_af91aef7d42cf760b37da9eeee02c6340}\label{structNativeScript_af91aef7d42cf760b37da9eeee02c6340}} 
+\index{NativeScript@{NativeScript}!get@{get}}
+\index{get@{get}!NativeScript@{NativeScript}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ Native\+Script\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the script object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the script \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the script object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structNativeScript_a2a8ff29dd946b31240b2186796d26af2}\label{structNativeScript_a2a8ff29dd946b31240b2186796d26af2}} 
+\index{NativeScript@{NativeScript}!is@{is}}
+\index{is@{is}!NativeScript@{NativeScript}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Native\+Script\+::is (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if this script is the same type as T. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the script to check \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+true if the script type is same otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Components/Native\+Script.\+hpp\end{DoxyCompactItemize}

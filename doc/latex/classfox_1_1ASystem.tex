@@ -1,0 +1,189 @@
+\hypertarget{classfox_1_1ASystem}{}\doxysection{fox\+::A\+System Class Reference}
+\label{classfox_1_1ASystem}\index{fox::ASystem@{fox::ASystem}}
+
+
+Inheritance diagram for fox\+::A\+System\+:
+% FIG 0
+
+
+Collaboration diagram for fox\+::A\+System\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfox_1_1ASystem_aaa50983af6e01a0945423f642ecc4d3e}{A\+System}} (\mbox{\hyperlink{classfox_1_1World}{World}} \&o\+World, std\+::size\+\_\+t num\+\_\+components)
+\begin{DoxyCompactList}\small\item\em Contructor of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_aa1e2946f654e448108fedf4f5639e841}\label{classfox_1_1ASystem_aa1e2946f654e448108fedf4f5639e841}} 
+\mbox{\hyperlink{classfox_1_1ASystem_aa1e2946f654e448108fedf4f5639e841}{$\sim$\+A\+System}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1ASystem_a57d4dc494ae29090ed03e8ed39aa63ec}{On\+Add\+Entity}} (Entity\+Id o\+Entity)=0
+\begin{DoxyCompactList}\small\item\em Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Add event. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1ASystem_a80acc6bc7f6ee033ee2fb5528505ac50}{On\+Set\+Entity}} (Entity\+Id o\+Entity)=0
+\begin{DoxyCompactList}\small\item\em Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Set event. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1ASystem_aacb1e5eda150dd0023604bc79fcf4059}{On\+Remove\+Entity}} (Entity\+Id o\+Entity)=0
+\begin{DoxyCompactList}\small\item\em Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Remove event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_a8b7a858eb66b50d8722a7ceb5aff3b6e}\label{classfox_1_1ASystem_a8b7a858eb66b50d8722a7ceb5aff3b6e}} 
+virtual void \mbox{\hyperlink{classfox_1_1ASystem_a8b7a858eb66b50d8722a7ceb5aff3b6e}{run}} ()=0
+\begin{DoxyCompactList}\small\item\em Run the function of the system. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classfox_1_1ASystem_a38c7c8f0eebd90b3131fe1bbad4bcb05}{run}} (Entity\+Id e)=0
+\begin{DoxyCompactList}\small\item\em Run the function of the system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfox_1_1Pipeline}{Pipeline}} $\ast$ \mbox{\hyperlink{classfox_1_1ASystem_a73e2194bc030a01146b52d4eb0450707}{get\+\_\+pipeline}} () const
+\begin{DoxyCompactList}\small\item\em Get the pipeline. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1ASystem_a406b58a782e112a116e4bd84f5e347ee}{set\+\_\+pipeline}} (Pipeline\+::\+S\+Ptr p\+Pipe)
+\begin{DoxyCompactList}\small\item\em Set the pipeline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_a6d22215fb7c8837f3bd8a7530f6c7943}\label{classfox_1_1ASystem_a6d22215fb7c8837f3bd8a7530f6c7943}} 
+\mbox{\hyperlink{classfox_1_1World}{World}} \& {\bfseries m\+\_\+o\+World}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_a640e8ef49d7f3b84b46d9da50df3e026}\label{classfox_1_1ASystem_a640e8ef49d7f3b84b46d9da50df3e026}} 
+std\+::vector$<$ Entity\+Id $>$ {\bfseries m\+\_\+v\+Entities}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_acc25246391b473835188fa85a33ab2ed}\label{classfox_1_1ASystem_acc25246391b473835188fa85a33ab2ed}} 
+\mbox{\hyperlink{classbitset}{Comp\+Signature}} {\bfseries m\+\_\+\+Signature}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_ac8da12078767781ce49f02ba16c3fbfb}\label{classfox_1_1ASystem_ac8da12078767781ce49f02ba16c3fbfb}} 
+int {\bfseries m\+\_\+u\+Event\+ID}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_a65af93999bace47d2598abb066131183}\label{classfox_1_1ASystem_a65af93999bace47d2598abb066131183}} 
+bool {\bfseries update\+\_\+on\+\_\+entity\+\_\+disable}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1ASystem_a1b7369d60bd23ca0b1a6f4dd193d74fd}\label{classfox_1_1ASystem_a1b7369d60bd23ca0b1a6f4dd193d74fd}} 
+Pipeline\+::\+S\+Ptr {\bfseries m\+\_\+p\+Pipeline}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfox_1_1ASystem_aaa50983af6e01a0945423f642ecc4d3e}\label{classfox_1_1ASystem_aaa50983af6e01a0945423f642ecc4d3e}} 
+\index{fox::ASystem@{fox::ASystem}!ASystem@{ASystem}}
+\index{ASystem@{ASystem}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{ASystem()}{ASystem()}}
+{\footnotesize\ttfamily fox\+::\+A\+System\+::\+A\+System (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1World}{World}} \&}]{o\+World,  }\item[{std\+::size\+\_\+t}]{num\+\_\+components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Contructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+World} & the Ecs world \\
+\hline
+{\em num\+\_\+components} & the number of components register in \mbox{\hyperlink{classfox_1_1ComponentManager}{Component\+Manager}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1ASystem_a73e2194bc030a01146b52d4eb0450707}\label{classfox_1_1ASystem_a73e2194bc030a01146b52d4eb0450707}} 
+\index{fox::ASystem@{fox::ASystem}!get\_pipeline@{get\_pipeline}}
+\index{get\_pipeline@{get\_pipeline}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{get\_pipeline()}{get\_pipeline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classfox_1_1Pipeline}{Pipeline}}$\ast$ fox\+::\+A\+System\+::get\+\_\+pipeline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the pipeline. 
+
+\begin{DoxyReturn}{Returns}
+the pipeline 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ASystem_a57d4dc494ae29090ed03e8ed39aa63ec}\label{classfox_1_1ASystem_a57d4dc494ae29090ed03e8ed39aa63ec}} 
+\index{fox::ASystem@{fox::ASystem}!OnAddEntity@{OnAddEntity}}
+\index{OnAddEntity@{OnAddEntity}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{OnAddEntity()}{OnAddEntity()}}
+{\footnotesize\ttfamily virtual void fox\+::\+A\+System\+::\+On\+Add\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Add event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classfox_1_1System_a868bc5055d6945e5b876d582044fe189}{fox\+::\+System$<$ Cs $>$}}.
+
+\mbox{\Hypertarget{classfox_1_1ASystem_aacb1e5eda150dd0023604bc79fcf4059}\label{classfox_1_1ASystem_aacb1e5eda150dd0023604bc79fcf4059}} 
+\index{fox::ASystem@{fox::ASystem}!OnRemoveEntity@{OnRemoveEntity}}
+\index{OnRemoveEntity@{OnRemoveEntity}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{OnRemoveEntity()}{OnRemoveEntity()}}
+{\footnotesize\ttfamily virtual void fox\+::\+A\+System\+::\+On\+Remove\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Remove event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classfox_1_1System_a47bfce37b436b5bff1a403269affdf48}{fox\+::\+System$<$ Cs $>$}}.
+
+\mbox{\Hypertarget{classfox_1_1ASystem_a80acc6bc7f6ee033ee2fb5528505ac50}\label{classfox_1_1ASystem_a80acc6bc7f6ee033ee2fb5528505ac50}} 
+\index{fox::ASystem@{fox::ASystem}!OnSetEntity@{OnSetEntity}}
+\index{OnSetEntity@{OnSetEntity}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{OnSetEntity()}{OnSetEntity()}}
+{\footnotesize\ttfamily virtual void fox\+::\+A\+System\+::\+On\+Set\+Entity (\begin{DoxyParamCaption}\item[{Entity\+Id}]{o\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called when a entity match the system signature and when the system is registered to ecs\+::\+On\+Set event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Entity} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classfox_1_1System_af41f867ed970cec160ec9d3f0463fca2}{fox\+::\+System$<$ Cs $>$}}.
+
+\mbox{\Hypertarget{classfox_1_1ASystem_a38c7c8f0eebd90b3131fe1bbad4bcb05}\label{classfox_1_1ASystem_a38c7c8f0eebd90b3131fe1bbad4bcb05}} 
+\index{fox::ASystem@{fox::ASystem}!run@{run}}
+\index{run@{run}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void fox\+::\+A\+System\+::run (\begin{DoxyParamCaption}\item[{Entity\+Id}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Run the function of the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity id \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classfox_1_1System_acb2ca0e7b903b5b35e2773793002af2b}{fox\+::\+System$<$ Cs $>$}}.
+
+\mbox{\Hypertarget{classfox_1_1ASystem_a406b58a782e112a116e4bd84f5e347ee}\label{classfox_1_1ASystem_a406b58a782e112a116e4bd84f5e347ee}} 
+\index{fox::ASystem@{fox::ASystem}!set\_pipeline@{set\_pipeline}}
+\index{set\_pipeline@{set\_pipeline}!fox::ASystem@{fox::ASystem}}
+\doxysubsubsection{\texorpdfstring{set\_pipeline()}{set\_pipeline()}}
+{\footnotesize\ttfamily void fox\+::\+A\+System\+::set\+\_\+pipeline (\begin{DoxyParamCaption}\item[{Pipeline\+::\+S\+Ptr}]{p\+Pipe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the pipeline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Pipe} & the pipeline to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/A\+System.\+hpp\end{DoxyCompactItemize}

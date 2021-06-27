@@ -1,0 +1,97 @@
+\hypertarget{classfox_1_1SystemManager}{}\doxysection{fox\+::System\+Manager Class Reference}
+\label{classfox_1_1SystemManager}\index{fox::SystemManager@{fox::SystemManager}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1SystemManager_a030966af6d86af1bf214f6b0b8ccec92}\label{classfox_1_1SystemManager_a030966af6d86af1bf214f6b0b8ccec92}} 
+using {\bfseries Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1SystemManager}{System\+Manager}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1SystemManager_a8d07cdfdb321035628413ab370a3e96e}\label{classfox_1_1SystemManager_a8d07cdfdb321035628413ab370a3e96e}} 
+{\footnotesize template$<$class Cs $>$ }\\void {\bfseries process\+\_\+one\+\_\+type} (\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$wrld, \mbox{\hyperlink{classbitset}{Comp\+Signature}} \&sig)
+\item 
+{\footnotesize template$<$class... Cs$>$ }\\\mbox{\hyperlink{classfox_1_1System}{System}}$<$ Cs... $>$ \& \mbox{\hyperlink{classfox_1_1SystemManager_ab3d7e933d26cfeb91d5dfa690d436565}{create\+\_\+system}} (\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$p\+World, std\+::string str\+Name, std\+::size\+\_\+t num\+\_\+components)
+\begin{DoxyCompactList}\small\item\em Create a system object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1SystemManager_a72b2843e7193b01370270de626d49a36}{Entity\+Destroyed}} (Entity\+Id entity)
+\begin{DoxyCompactList}\small\item\em This function allows to delete a entity in the system list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfox_1_1SystemManager_a8123b826d4bcd171f85d196cc4ada55b}\label{classfox_1_1SystemManager_a8123b826d4bcd171f85d196cc4ada55b}} 
+void \mbox{\hyperlink{classfox_1_1SystemManager_a8123b826d4bcd171f85d196cc4ada55b}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the entity list of all systems. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfox_1_1SystemManager_a993df804913ce8f3ba430887dbe76e75}{Entity\+Signature\+Changed}} (Entity\+Id entity, const \mbox{\hyperlink{classbitset}{Comp\+Signature}} \&entity\+Signature)
+\begin{DoxyCompactList}\small\item\em This function remove/add the entity, given in parameter, in the system list and it trigger a On\+Add/\+On\+Remove event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1SystemManager_a0f0ae7cba187eb82e8519223fa844f0a}\label{classfox_1_1SystemManager_a0f0ae7cba187eb82e8519223fa844f0a}} 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1ASystem}{A\+System}} $>$ $>$ {\bfseries m\+\_\+v\+Systems}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1SystemManager_ab3d7e933d26cfeb91d5dfa690d436565}\label{classfox_1_1SystemManager_ab3d7e933d26cfeb91d5dfa690d436565}} 
+\index{fox::SystemManager@{fox::SystemManager}!create\_system@{create\_system}}
+\index{create\_system@{create\_system}!fox::SystemManager@{fox::SystemManager}}
+\doxysubsubsection{\texorpdfstring{create\_system()}{create\_system()}}
+{\footnotesize\ttfamily template$<$class... Cs$>$ \\
+\mbox{\hyperlink{classfox_1_1System}{System}}$<$Cs...$>$\& fox\+::\+System\+Manager\+::create\+\_\+system (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1World}{World}} $\ast$}]{p\+World,  }\item[{std\+::string}]{str\+Name,  }\item[{std\+::size\+\_\+t}]{num\+\_\+components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a system object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Cs} & a list of Components that the system needs \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+World} & a pointer to the world \\
+\hline
+{\em str\+Name} & The name of the system \\
+\hline
+{\em num\+\_\+components} & the number of registered components in the world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+System$<$\+Cs...$>$\& a reference to the created system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1SystemManager_a72b2843e7193b01370270de626d49a36}\label{classfox_1_1SystemManager_a72b2843e7193b01370270de626d49a36}} 
+\index{fox::SystemManager@{fox::SystemManager}!EntityDestroyed@{EntityDestroyed}}
+\index{EntityDestroyed@{EntityDestroyed}!fox::SystemManager@{fox::SystemManager}}
+\doxysubsubsection{\texorpdfstring{EntityDestroyed()}{EntityDestroyed()}}
+{\footnotesize\ttfamily void fox\+::\+System\+Manager\+::\+Entity\+Destroyed (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity }\end{DoxyParamCaption})}
+
+
+
+This function allows to delete a entity in the system list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the deleted entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfox_1_1SystemManager_a993df804913ce8f3ba430887dbe76e75}\label{classfox_1_1SystemManager_a993df804913ce8f3ba430887dbe76e75}} 
+\index{fox::SystemManager@{fox::SystemManager}!EntitySignatureChanged@{EntitySignatureChanged}}
+\index{EntitySignatureChanged@{EntitySignatureChanged}!fox::SystemManager@{fox::SystemManager}}
+\doxysubsubsection{\texorpdfstring{EntitySignatureChanged()}{EntitySignatureChanged()}}
+{\footnotesize\ttfamily void fox\+::\+System\+Manager\+::\+Entity\+Signature\+Changed (\begin{DoxyParamCaption}\item[{Entity\+Id}]{entity,  }\item[{const \mbox{\hyperlink{classbitset}{Comp\+Signature}} \&}]{entity\+Signature }\end{DoxyParamCaption})}
+
+
+
+This function remove/add the entity, given in parameter, in the system list and it trigger a On\+Add/\+On\+Remove event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the changed entity \\
+\hline
+{\em entity\+Signature} & the changed signature of the entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Ecs/World.\+hpp\end{DoxyCompactItemize}

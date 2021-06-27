@@ -1,0 +1,123 @@
+\hypertarget{classfox_1_1ResourceManager}{}\doxysection{fox\+::Resource\+Manager Class Reference}
+\label{classfox_1_1ResourceManager}\index{fox::ResourceManager@{fox::ResourceManager}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfox_1_1ResourceManager_aa120f33cc1c53cd79eccc83637360671}\label{classfox_1_1ResourceManager_aa120f33cc1c53cd79eccc83637360671}} 
+using {\bfseries I\+Asset\+Manager\+Ptr} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classfox_1_1ResourceManager_a57fa7fb7437c94d2e651ba4cc9eff89a}{Add\+Manager}} (\mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}} $\ast$p\+Asset\+Manager) noexcept
+\begin{DoxyCompactList}\small\item\em Add a new \mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classfox_1_1ResourceManager_a2ddeebeafdd12f1f59381f4e68dfe719}{Add\+Asset}} (const std\+::string \&str\+Asset\+Path) noexcept
+\begin{DoxyCompactList}\small\item\em Add a new Asset. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Asset $>$ }\\T\+Asset $\ast$ \mbox{\hyperlink{classfox_1_1ResourceManager_a2d902705b4a1c8fc0d9935b2a09afa78}{Get\+Asset}} (const std\+::string \&str\+Asset\+Path)
+\begin{DoxyCompactList}\small\item\em Get the asset match with the name given in parameter. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Asset $>$ }\\bool \mbox{\hyperlink{classfox_1_1ResourceManager_a454a6e5696e9cf4e1a0134b95b30f39a}{Remove\+Asset}} (const std\+::string \&str\+Asset\+Path) noexcept
+\begin{DoxyCompactList}\small\item\em Remove a asset to it manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfox_1_1ResourceManager_a2ddeebeafdd12f1f59381f4e68dfe719}\label{classfox_1_1ResourceManager_a2ddeebeafdd12f1f59381f4e68dfe719}} 
+\index{fox::ResourceManager@{fox::ResourceManager}!AddAsset@{AddAsset}}
+\index{AddAsset@{AddAsset}!fox::ResourceManager@{fox::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{AddAsset()}{AddAsset()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fox\+::\+Resource\+Manager\+::\+Add\+Asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Add a new Asset. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset (use to identify the asset like a Unique ID) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the asset is successfully added or false if the asset have been register twice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ResourceManager_a57fa7fb7437c94d2e651ba4cc9eff89a}\label{classfox_1_1ResourceManager_a57fa7fb7437c94d2e651ba4cc9eff89a}} 
+\index{fox::ResourceManager@{fox::ResourceManager}!AddManager@{AddManager}}
+\index{AddManager@{AddManager}!fox::ResourceManager@{fox::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{AddManager()}{AddManager()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fox\+::\+Resource\+Manager\+::\+Add\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}} $\ast$}]{p\+Asset\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Add a new \mbox{\hyperlink{classfox_1_1IAssetManager}{I\+Asset\+Manager}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of the Asset (use to identify the manager) \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Asset\+Manager} & the manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the manager is successfully added or false if the manager have been register twice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ResourceManager_a2d902705b4a1c8fc0d9935b2a09afa78}\label{classfox_1_1ResourceManager_a2d902705b4a1c8fc0d9935b2a09afa78}} 
+\index{fox::ResourceManager@{fox::ResourceManager}!GetAsset@{GetAsset}}
+\index{GetAsset@{GetAsset}!fox::ResourceManager@{fox::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetAsset()}{GetAsset()}}
+{\footnotesize\ttfamily template$<$typename T\+Asset $>$ \\
+T\+Asset$\ast$ fox\+::\+Resource\+Manager\+::\+Get\+Asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the asset match with the name given in parameter. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Asset} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the asset if it\textquotesingle{}s exist otherwise it return nullptr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfox_1_1ResourceManager_a454a6e5696e9cf4e1a0134b95b30f39a}\label{classfox_1_1ResourceManager_a454a6e5696e9cf4e1a0134b95b30f39a}} 
+\index{fox::ResourceManager@{fox::ResourceManager}!RemoveAsset@{RemoveAsset}}
+\index{RemoveAsset@{RemoveAsset}!fox::ResourceManager@{fox::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{RemoveAsset()}{RemoveAsset()}}
+{\footnotesize\ttfamily template$<$typename T\+Asset $>$ \\
+bool fox\+::\+Resource\+Manager\+::\+Remove\+Asset (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Asset\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Remove a asset to it manager. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Asset} & the type of the asset \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Asset\+Path} & the path of the asset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the asset is successfully removed or otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Core/Resource\+Manager.\+hpp\end{DoxyCompactItemize}

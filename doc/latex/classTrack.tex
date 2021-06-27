@@ -1,0 +1,443 @@
+\hypertarget{classTrack}{}\doxysection{Track$<$ T $>$ Class Template Reference}
+\label{classTrack}\index{Track$<$ T $>$@{Track$<$ T $>$}}
+
+
+Inheritance diagram for Track$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Track$<$ T $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrack_ad5ff44cd008f2d6574ef5f7e34427040}\label{classTrack_ad5ff44cd008f2d6574ef5f7e34427040}} 
+\mbox{\hyperlink{classTrack_ad5ff44cd008f2d6574ef5f7e34427040}{Track}} ()
+\begin{DoxyCompactList}\small\item\em C\+Onstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTrack_aa77ea48cef67c9e67cdc5be70f784e63}{then}} (float time, T value)
+\begin{DoxyCompactList}\small\item\em Add a new keyframe, at the time giving the paramater, in the track. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTrack_a4d7a3c0533207e8f2950afa4f1d553ce}{then}} (float time, T in, T out, T value)
+\begin{DoxyCompactList}\small\item\em Add a new keyframe, at the time giving the paramater, in the track. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTrack_a121d9bc651cc9a0d0f3772e648d71e54}{Is\+Valid}} () override
+\begin{DoxyCompactList}\small\item\em Check if the track have keyframes otherwise false. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{classTrack_a736d3bd99f7b6d8e66d35160879801c1}{size}} () override
+\begin{DoxyCompactList}\small\item\em Return the number of keyframe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrack_a842c919256b48c6718a0d39df9892015}{ease}} (Easing e)
+\begin{DoxyCompactList}\small\item\em Set the type of interpolation to use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTrack_a52f0e4a500417211b6f502ba311eab00}{apply}} (T \&target)
+\begin{DoxyCompactList}\small\item\em Set the reference of the value to be modified during the simulation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Var $>$ }\\\mbox{\hyperlink{classTrack}{Track}}$<$ T $>$ \& \mbox{\hyperlink{classTrack_a60a02a0b6d6b3ad1ac4b1faa248b44ee}{apply}} (T\+Var $\ast$obj, void(T\+Var\+::$\ast$set)(T))
+\begin{DoxyCompactList}\small\item\em Set the setter of the value to be modified during the simulation. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classTrack_a94f92760862ef075f3cd34295afeb1e1}{Get\+Start\+Time}} () override
+\begin{DoxyCompactList}\small\item\em Return the start time of the track. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classTrack_ac7acc48e91d4c47211a6f3439155154b}{Get\+End\+Time}} () override
+\begin{DoxyCompactList}\small\item\em Return the end time of the track. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTrack_a347349c054f5a797a6ba4330be83d418}{Sample}} (float time, bool looping) override
+\begin{DoxyCompactList}\small\item\em Run the track. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrack_a1afff72a8cecc36e7b6641edf1765273}{Sample\+Setter}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Run the track using setter function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrack_af5326f5088523d14fa5789e31aededff}{Sample\+Target}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Run the track using class member. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structFrame}{Frame}}$<$ T $>$ \& \mbox{\hyperlink{classTrack_a87ed64836fe98fa90ff2f4f755053f94}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int index)
+\begin{DoxyCompactList}\small\item\em Get the keyframe at the index given in parameter (no out of range check) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{classTrack_adfc615abba730f37c95771430c93ed02}{Sample\+Constant}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Run the track with constant interpolation. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classTrack_a829e1486f92c690f15bf4a9e43bcfe47}{Sample\+Linear}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Run the track with linear interpolation. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classTrack_a2e5441b63012072eb903dff60f301bd4}{Sample\+Cubic}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Run the track with cubic interpolation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTrack_ab984a404de9cf211efbe780814a14d57}\label{classTrack_ab984a404de9cf211efbe780814a14d57}} 
+T {\bfseries Hermite} (float time, const T \&point1, const T \&slope1, const T \&point2, const T \&slope2)
+\item 
+int \mbox{\hyperlink{classTrack_a98af8e47a1502997375e04d99932fe83}{Frame\+Index}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Get the index of the frame using the time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTrack_a46eb4328a7f2e4bfaffee6312dedf28f}{Adjust\+Time\+To\+Fit\+Track}} (float time, bool looping)
+\begin{DoxyCompactList}\small\item\em Adjust the time to fit with the track. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTrack_a21f7ac262aa0b6202e741ed63452a8ab}\label{classTrack_a21f7ac262aa0b6202e741ed63452a8ab}} 
+std\+::vector$<$ \mbox{\hyperlink{structFrame}{Frame}}$<$ T $>$ $>$ {\bfseries m\+\_\+v\+Frames}
+\item 
+\mbox{\Hypertarget{classTrack_a702e5eea2390c913c22ee8fdc553d2e3}\label{classTrack_a702e5eea2390c913c22ee8fdc553d2e3}} 
+Easing {\bfseries m\+\_\+e\+Easing}
+\item 
+\mbox{\Hypertarget{classTrack_a52ad5c935692edea7111185bdef37789}\label{classTrack_a52ad5c935692edea7111185bdef37789}} 
+T $\ast$ {\bfseries m\+\_\+p\+Target}
+\item 
+\mbox{\Hypertarget{classTrack_a9c29445c060a81291944e8bac1012be2}\label{classTrack_a9c29445c060a81291944e8bac1012be2}} 
+std\+::function$<$ void(T)$>$ {\bfseries settter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrack_a46eb4328a7f2e4bfaffee6312dedf28f}\label{classTrack_a46eb4328a7f2e4bfaffee6312dedf28f}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!AdjustTimeToFitTrack@{AdjustTimeToFitTrack}}
+\index{AdjustTimeToFitTrack@{AdjustTimeToFitTrack}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AdjustTimeToFitTrack()}{AdjustTimeToFitTrack()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+float \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Adjust\+Time\+To\+Fit\+Track (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Adjust the time to fit with the track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the adjusted time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a52f0e4a500417211b6f502ba311eab00}\label{classTrack_a52f0e4a500417211b6f502ba311eab00}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!apply@{apply}}
+\index{apply@{apply}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::apply (\begin{DoxyParamCaption}\item[{T \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the reference of the value to be modified during the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a60a02a0b6d6b3ad1ac4b1faa248b44ee}\label{classTrack_a60a02a0b6d6b3ad1ac4b1faa248b44ee}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!apply@{apply}}
+\index{apply@{apply}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename T\+Var $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::apply (\begin{DoxyParamCaption}\item[{T\+Var $\ast$}]{obj,  }\item[{void(T\+Var\+::$\ast$)(T)}]{set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the setter of the value to be modified during the simulation. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Var} & the type of the class \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the class for the setter \\
+\hline
+{\em set} & the setter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a842c919256b48c6718a0d39df9892015}\label{classTrack_a842c919256b48c6718a0d39df9892015}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!ease@{ease}}
+\index{ease@{ease}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ease()}{ease()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::ease (\begin{DoxyParamCaption}\item[{Easing}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the type of interpolation to use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the type of interpolation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTrack_a98af8e47a1502997375e04d99932fe83}\label{classTrack_a98af8e47a1502997375e04d99932fe83}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!FrameIndex@{FrameIndex}}
+\index{FrameIndex@{FrameIndex}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FrameIndex()}{FrameIndex()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Frame\+Index (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Get the index of the frame using the time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index of the frame using the time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_ac7acc48e91d4c47211a6f3439155154b}\label{classTrack_ac7acc48e91d4c47211a6f3439155154b}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!GetEndTime@{GetEndTime}}
+\index{GetEndTime@{GetEndTime}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEndTime()}{GetEndTime()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual float \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Get\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the end time of the track. 
+
+\begin{DoxyReturn}{Returns}
+the end time of the track 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classITrack_a7c017a0f9963d3548f969dc9352c88b5}{I\+Track}}.
+
+\mbox{\Hypertarget{classTrack_a94f92760862ef075f3cd34295afeb1e1}\label{classTrack_a94f92760862ef075f3cd34295afeb1e1}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!GetStartTime@{GetStartTime}}
+\index{GetStartTime@{GetStartTime}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetStartTime()}{GetStartTime()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual float \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the start time of the track. 
+
+\begin{DoxyReturn}{Returns}
+the start time of the track 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classITrack_a8cd2315e6688e8dcec30279f14a5d4bc}{I\+Track}}.
+
+\mbox{\Hypertarget{classTrack_a121d9bc651cc9a0d0f3772e648d71e54}\label{classTrack_a121d9bc651cc9a0d0f3772e648d71e54}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual bool \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the track have keyframes otherwise false. 
+
+\begin{DoxyReturn}{Returns}
+true if the track have keyframes otherwise false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classITrack_aebe3bf91ca18af4125f08c5d967712fe}{I\+Track}}.
+
+\mbox{\Hypertarget{classTrack_a87ed64836fe98fa90ff2f4f755053f94}\label{classTrack_a87ed64836fe98fa90ff2f4f755053f94}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{structFrame}{Frame}}$<$T$>$\& \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the keyframe at the index given in parameter (no out of range check) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the position of the keyframe in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the keyframe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a347349c054f5a797a6ba4330be83d418}\label{classTrack_a347349c054f5a797a6ba4330be83d418}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!Sample@{Sample}}
+\index{Sample@{Sample}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Sample()}{Sample()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Run the track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classITrack_a51771b00b428da0c9673c9a9aadb8c5e}{I\+Track}}.
+
+\mbox{\Hypertarget{classTrack_adfc615abba730f37c95771430c93ed02}\label{classTrack_adfc615abba730f37c95771430c93ed02}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!SampleConstant@{SampleConstant}}
+\index{SampleConstant@{SampleConstant}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SampleConstant()}{SampleConstant()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample\+Constant (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Run the track with constant interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+interpolated value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a2e5441b63012072eb903dff60f301bd4}\label{classTrack_a2e5441b63012072eb903dff60f301bd4}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!SampleCubic@{SampleCubic}}
+\index{SampleCubic@{SampleCubic}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SampleCubic()}{SampleCubic()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample\+Cubic (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Run the track with cubic interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+interpolated value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a829e1486f92c690f15bf4a9e43bcfe47}\label{classTrack_a829e1486f92c690f15bf4a9e43bcfe47}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!SampleLinear@{SampleLinear}}
+\index{SampleLinear@{SampleLinear}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SampleLinear()}{SampleLinear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample\+Linear (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Run the track with linear interpolation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+interpolated value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_a1afff72a8cecc36e7b6641edf1765273}\label{classTrack_a1afff72a8cecc36e7b6641edf1765273}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!SampleSetter@{SampleSetter}}
+\index{SampleSetter@{SampleSetter}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SampleSetter()}{SampleSetter()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample\+Setter (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the track using setter function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTrack_af5326f5088523d14fa5789e31aededff}\label{classTrack_af5326f5088523d14fa5789e31aededff}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!SampleTarget@{SampleTarget}}
+\index{SampleTarget@{SampleTarget}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SampleTarget()}{SampleTarget()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::Sample\+Target (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Run the track using class member. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTrack_a736d3bd99f7b6d8e66d35160879801c1}\label{classTrack_a736d3bd99f7b6d8e66d35160879801c1}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!size@{size}}
+\index{size@{size}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual std\+::size\+\_\+t \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the number of keyframe. 
+
+\begin{DoxyReturn}{Returns}
+the number of keyframe 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classITrack_a30d7d4de10c7e609c95e609907ae1fd0}{I\+Track}}.
+
+\mbox{\Hypertarget{classTrack_a4d7a3c0533207e8f2950afa4f1d553ce}\label{classTrack_a4d7a3c0533207e8f2950afa4f1d553ce}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!then@{then}}
+\index{then@{then}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::then (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{T}]{in,  }\item[{T}]{out,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new keyframe, at the time giving the paramater, in the track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time where the keyframe will be added \\
+\hline
+{\em in} & smooth interpolation \\
+\hline
+{\em out} & smooth interpolation \\
+\hline
+{\em value} & the value of the keyframe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrack_aa77ea48cef67c9e67cdc5be70f784e63}\label{classTrack_aa77ea48cef67c9e67cdc5be70f784e63}} 
+\index{Track$<$ T $>$@{Track$<$ T $>$}!then@{then}}
+\index{then@{then}!Track$<$ T $>$@{Track$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{then()}{then()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classTrack}{Track}}$<$T$>$\& \mbox{\hyperlink{classTrack}{Track}}$<$ T $>$\+::then (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new keyframe, at the time giving the paramater, in the track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & the time where the keyframe will be added \\
+\hline
+{\em value} & the value of the keyframe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the class itself 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Animator/Track.\+hpp\end{DoxyCompactItemize}

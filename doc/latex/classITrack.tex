@@ -1,0 +1,116 @@
+\hypertarget{classITrack}{}\doxysection{I\+Track Class Reference}
+\label{classITrack}\index{ITrack@{ITrack}}
+
+
+Inheritance diagram for I\+Track\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classITrack_a51771b00b428da0c9673c9a9aadb8c5e}{Sample}} (float time, bool looping)=0
+\begin{DoxyCompactList}\small\item\em Run the track. \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{classITrack_a30d7d4de10c7e609c95e609907ae1fd0}{size}} ()=0
+\begin{DoxyCompactList}\small\item\em Return the number of keyframe. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classITrack_a8cd2315e6688e8dcec30279f14a5d4bc}{Get\+Start\+Time}} ()=0
+\begin{DoxyCompactList}\small\item\em Return the start time of the track. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classITrack_a7c017a0f9963d3548f969dc9352c88b5}{Get\+End\+Time}} ()=0
+\begin{DoxyCompactList}\small\item\em Return the end time of the track. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classITrack_aebe3bf91ca18af4125f08c5d967712fe}{Is\+Valid}} ()=0
+\begin{DoxyCompactList}\small\item\em Check if the track have keyframes otherwise false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classITrack_a7c017a0f9963d3548f969dc9352c88b5}\label{classITrack_a7c017a0f9963d3548f969dc9352c88b5}} 
+\index{ITrack@{ITrack}!GetEndTime@{GetEndTime}}
+\index{GetEndTime@{GetEndTime}!ITrack@{ITrack}}
+\doxysubsubsection{\texorpdfstring{GetEndTime()}{GetEndTime()}}
+{\footnotesize\ttfamily virtual float I\+Track\+::\+Get\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the end time of the track. 
+
+\begin{DoxyReturn}{Returns}
+the end time of the track 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTrack_ac7acc48e91d4c47211a6f3439155154b}{Track$<$ T $>$}}.
+
+\mbox{\Hypertarget{classITrack_a8cd2315e6688e8dcec30279f14a5d4bc}\label{classITrack_a8cd2315e6688e8dcec30279f14a5d4bc}} 
+\index{ITrack@{ITrack}!GetStartTime@{GetStartTime}}
+\index{GetStartTime@{GetStartTime}!ITrack@{ITrack}}
+\doxysubsubsection{\texorpdfstring{GetStartTime()}{GetStartTime()}}
+{\footnotesize\ttfamily virtual float I\+Track\+::\+Get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the start time of the track. 
+
+\begin{DoxyReturn}{Returns}
+the start time of the track 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTrack_a94f92760862ef075f3cd34295afeb1e1}{Track$<$ T $>$}}.
+
+\mbox{\Hypertarget{classITrack_aebe3bf91ca18af4125f08c5d967712fe}\label{classITrack_aebe3bf91ca18af4125f08c5d967712fe}} 
+\index{ITrack@{ITrack}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!ITrack@{ITrack}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily virtual bool I\+Track\+::\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if the track have keyframes otherwise false. 
+
+\begin{DoxyReturn}{Returns}
+true if the track have keyframes otherwise false 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTrack_a121d9bc651cc9a0d0f3772e648d71e54}{Track$<$ T $>$}}.
+
+\mbox{\Hypertarget{classITrack_a51771b00b428da0c9673c9a9aadb8c5e}\label{classITrack_a51771b00b428da0c9673c9a9aadb8c5e}} 
+\index{ITrack@{ITrack}!Sample@{Sample}}
+\index{Sample@{Sample}!ITrack@{ITrack}}
+\doxysubsubsection{\texorpdfstring{Sample()}{Sample()}}
+{\footnotesize\ttfamily virtual void I\+Track\+::\+Sample (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{bool}]{looping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Run the track. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & current time of the animation \\
+\hline
+{\em looping} & set it to true and the track will loop \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classTrack_a347349c054f5a797a6ba4330be83d418}{Track$<$ T $>$}}.
+
+\mbox{\Hypertarget{classITrack_a30d7d4de10c7e609c95e609907ae1fd0}\label{classITrack_a30d7d4de10c7e609c95e609907ae1fd0}} 
+\index{ITrack@{ITrack}!size@{size}}
+\index{size@{size}!ITrack@{ITrack}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t I\+Track\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the number of keyframe. 
+
+\begin{DoxyReturn}{Returns}
+the number of keyframe 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTrack_a736d3bd99f7b6d8e66d35160879801c1}{Track$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Fox/include/\+Animator/Track.\+hpp\end{DoxyCompactItemize}
